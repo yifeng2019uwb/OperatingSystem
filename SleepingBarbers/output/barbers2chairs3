@@ -1,0 +1,4946 @@
+the shop opens
+barber 0 arrives for work
+barber 1 arrives for work
+barber 0 takes a nap
+barber 1 takes a nap
+customer 0 arrives
+customer 0 wakes barber 0
+barber 0 wakes up
+customer 0 sits in barber 0's chair
+barber 0 gives customer 0 a haircut
+customer 1 arrives
+customer 1 wakes barber 1
+barber 1 wakes up
+customer 1 sits in barber 1's chair
+barber 1 gives customer 1 a haircut
+customer 2 arrives
+customer 2 takes a set in the waiting room
+barber 0 finishes customer 0's haircut
+customer 0 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 0
+customer 0 leaves satisfied
+barber 0 calls customer 2
+customer 2 sits in barber 0's chair
+barber 0 gives customer 2 a haircut
+customer 3 arrives
+customer 3 takes a set in the waiting room
+barber 1 finishes customer 3's haircut
+customer 3 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 3
+customer 3 leaves satisfied
+barber 1 calls customer 3
+customer 3 sits in barber 1's chair
+barber 1 gives customer 3 a haircut
+customer 4 arrives
+customer 4 takes a set in the waiting room
+customer 5 arrives
+customer 5 takes a set in the waiting room
+barber 0 finishes customer 5's haircut
+customer 5 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 5
+customer 5 leaves satisfied
+barber 0 calls customer 5
+customer 5 sits in barber 0's chair
+barber 0 gives customer 5 a haircut
+customer 6 arrives
+customer 6 takes a set in the waiting room
+barber 1 finishes customer 6's haircut
+customer 6 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 6
+customer 6 leaves satisfied
+barber 1 calls customer 6
+customer 6 sits in barber 1's chair
+barber 1 gives customer 6 a haircut
+customer 7 arrives
+customer 7 takes a set in the waiting room
+customer 8 arrives
+customer 8 takes a set in the waiting room
+barber 0 finishes customer 8's haircut
+customer 8 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 8
+customer 8 leaves satisfied
+barber 0 calls customer 8
+customer 8 sits in barber 0's chair
+barber 0 gives customer 8 a haircut
+customer 9 arrives
+customer 9 takes a set in the waiting room
+barber 1 finishes customer 9's haircut
+customer 9 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 9
+customer 9 leaves satisfied
+barber 1 calls customer 9
+customer 9 sits in barber 1's chair
+barber 1 gives customer 9 a haircut
+customer 10 arrives
+customer 10 takes a set in the waiting room
+barber 0 finishes customer 10's haircut
+customer 10 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 10
+customer 10 leaves satisfied
+barber 0 calls customer 10
+customer 10 sits in barber 0's chair
+barber 0 gives customer 10 a haircut
+customer 11 arrives
+customer 11 takes a set in the waiting room
+customer 12 arrives
+customer 12 leaves without getting haircut
+barber 1 finishes customer 12's haircut
+customer 12 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 12
+customer 12 leaves satisfied
+barber 1 calls customer 12
+customer 12 sits in barber 1's chair
+barber 1 gives customer 12 a haircut
+customer 13 arrives
+customer 13 takes a set in the waiting room
+barber 0 finishes customer 12's haircut
+customer 12 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 12
+customer 12 leaves satisfied
+barber 0 calls customer 12
+customer 12 sits in barber 0's chair
+barber 0 gives customer 12 a haircut
+customer 14 arrives
+customer 14 takes a set in the waiting room
+customer 15 arrives
+customer 15 leaves without getting haircut
+barber 1 finishes customer 12's haircut
+customer 12 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 12
+customer 12 leaves satisfied
+barber 1 calls customer 12
+customer 12 sits in barber 1's chair
+barber 1 gives customer 12 a haircut
+customer 16 arrives
+customer 16 takes a set in the waiting room
+barber 0 finishes customer 16's haircut
+customer 16 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 16
+customer 16 leaves satisfied
+barber 0 calls customer 15
+customer 15 sits in barber 0's chair
+barber 0 gives customer 15 a haircut
+customer 17 arrives
+customer 17 takes a set in the waiting room
+customer 18 arrives
+customer 18 leaves without getting haircut
+barber 1 finishes customer 17's haircut
+customer 17 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 17
+customer 17 leaves satisfied
+barber 1 calls customer 14
+customer 14 sits in barber 1's chair
+barber 1 gives customer 14 a haircut
+barber 0 finishes customer 18's haircut
+customer 18 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 18
+customer 18 leaves satisfied
+barber 0 calls customer 17
+customer 17 sits in barber 0's chair
+barber 0 gives customer 17 a haircut
+customer 19 arrives
+customer 19 takes a set in the waiting room
+customer 20 arrives
+customer 20 takes a set in the waiting room
+customer 21 arrives
+customer 21 leaves without getting haircut
+barber 1 finishes customer 14's haircut
+customer 14 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 14
+customer 14 leaves satisfied
+barber 1 calls customer 21
+customer 21 sits in barber 1's chair
+barber 1 gives customer 21 a haircut
+barber 0 finishes customer 21's haircut
+customer 21 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 21
+customer 21 leaves satisfied
+barber 0 calls customer 20
+customer 20 sits in barber 0's chair
+barber 0 gives customer 20 a haircut
+customer 22 arrives
+customer 22 takes a set in the waiting room
+customer 23 arrives
+customer 23 takes a set in the waiting room
+barber 1 finishes customer 21's haircut
+customer 21 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 21
+customer 21 leaves satisfied
+barber 1 calls customer 23
+customer 23 sits in barber 1's chair
+barber 1 gives customer 23 a haircut
+customer 24 arrives
+customer 24 takes a set in the waiting room
+barber 0 finishes customer 23's haircut
+customer 23 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 23
+customer 23 leaves satisfied
+barber 0 calls customer 22
+customer 22 sits in barber 0's chair
+barber 0 gives customer 22 a haircut
+customer 25 arrives
+customer 25 takes a set in the waiting room
+customer 26 arrives
+customer 26 leaves without getting haircut
+barber 1 finishes customer 23's haircut
+customer 23 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 23
+customer 23 leaves satisfied
+barber 1 calls customer 23
+customer 23 sits in barber 1's chair
+barber 1 gives customer 23 a haircut
+customer 27 arrives
+customer 27 takes a set in the waiting room
+barber 0 finishes customer 22's haircut
+customer 22 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 22
+customer 22 leaves satisfied
+barber 0 calls customer 26
+customer 26 sits in barber 0's chair
+barber 0 gives customer 26 a haircut
+customer 28 arrives
+customer 28 takes a set in the waiting room
+customer 29 arrives
+customer 29 leaves without getting haircut
+barber 1 finishes customer 29's haircut
+customer 29 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 29
+customer 29 leaves satisfied
+barber 1 calls customer 28
+customer 28 sits in barber 1's chair
+barber 1 gives customer 28 a haircut
+barber 0 finishes customer 28's haircut
+customer 28 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 28
+customer 28 leaves satisfied
+barber 0 calls customer 29
+customer 29 sits in barber 0's chair
+barber 0 gives customer 29 a haircut
+customer 30 arrives
+customer 30 takes a set in the waiting room
+customer 31 arrives
+customer 31 takes a set in the waiting room
+barber 1 finishes customer 28's haircut
+customer 28 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 28
+customer 28 leaves satisfied
+barber 1 calls customer 28
+customer 28 sits in barber 1's chair
+barber 1 gives customer 28 a haircut
+customer 32 arrives
+customer 32 takes a set in the waiting room
+barber 0 finishes customer 31's haircut
+customer 31 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 31
+customer 31 leaves satisfied
+barber 0 calls customer 31
+customer 31 sits in barber 0's chair
+barber 0 gives customer 31 a haircut
+customer 33 arrives
+customer 33 takes a set in the waiting room
+customer 34 arrives
+customer 34 leaves without getting haircut
+customer 35 arrives
+customer 35 leaves without getting haircut
+barber 1 finishes customer 35's haircut
+customer 35 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 35
+customer 35 leaves satisfied
+barber 1 calls customer 33
+customer 33 sits in barber 1's chair
+barber 1 gives customer 33 a haircut
+barber 0 finishes customer 33's haircut
+customer 33 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 33
+customer 33 leaves satisfied
+barber 0 calls customer 35
+customer 35 sits in barber 0's chair
+barber 0 gives customer 35 a haircut
+customer 36 arrives
+customer 36 takes a set in the waiting room
+customer 37 arrives
+customer 37 takes a set in the waiting room
+barber 1 finishes customer 37's haircut
+customer 37 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 37
+customer 37 leaves satisfied
+barber 1 calls customer 37
+customer 37 sits in barber 1's chair
+barber 1 gives customer 37 a haircut
+customer 38 arrives
+customer 38 takes a set in the waiting room
+barber 0 finishes customer 38's haircut
+customer 38 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 38
+customer 38 leaves satisfied
+barber 0 calls customer 38
+customer 38 sits in barber 0's chair
+barber 0 gives customer 38 a haircut
+customer 39 arrives
+customer 39 takes a set in the waiting room
+customer 40 arrives
+customer 40 leaves without getting haircut
+barber 1 finishes customer 40's haircut
+customer 40 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 40
+customer 40 leaves satisfied
+barber 1 calls customer 40
+customer 40 sits in barber 1's chair
+barber 1 gives customer 40 a haircut
+customer 41 arrives
+customer 41 takes a set in the waiting room
+customer 42 arrives
+customer 42 leaves without getting haircut
+barber 0 finishes customer 39's haircut
+customer 39 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 39
+customer 39 leaves satisfied
+barber 0 calls customer 39
+customer 39 sits in barber 0's chair
+barber 0 gives customer 39 a haircut
+customer 43 arrives
+customer 43 takes a set in the waiting room
+customer 44 arrives
+customer 44 leaves without getting haircut
+barber 1 finishes customer 43's haircut
+customer 43 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 43
+customer 43 leaves satisfied
+barber 1 calls customer 44
+customer 44 sits in barber 1's chair
+barber 1 gives customer 44 a haircut
+customer 45 arrives
+customer 45 takes a set in the waiting room
+barber 0 finishes customer 44's haircut
+customer 44 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 44
+customer 44 leaves satisfied
+barber 0 calls customer 43
+customer 43 sits in barber 0's chair
+barber 0 gives customer 43 a haircut
+customer 46 arrives
+customer 46 takes a set in the waiting room
+customer 47 arrives
+customer 47 leaves without getting haircut
+barber 1 finishes customer 47's haircut
+customer 47 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 47
+customer 47 leaves satisfied
+barber 1 calls customer 43
+customer 43 sits in barber 1's chair
+barber 1 gives customer 43 a haircut
+barber 0 finishes customer 43's haircut
+customer 43 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 43
+customer 43 leaves satisfied
+barber 0 calls customer 45
+customer 45 sits in barber 0's chair
+barber 0 gives customer 45 a haircut
+customer 48 arrives
+customer 48 takes a set in the waiting room
+customer 49 arrives
+customer 49 takes a set in the waiting room
+customer 50 arrives
+customer 50 leaves without getting haircut
+barber 1 finishes customer 48's haircut
+customer 48 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 48
+customer 48 leaves satisfied
+barber 1 calls customer 49
+customer 49 sits in barber 1's chair
+barber 1 gives customer 49 a haircut
+customer 51 arrives
+customer 51 takes a set in the waiting room
+barber 0 finishes customer 45's haircut
+customer 45 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 45
+customer 45 leaves satisfied
+barber 0 calls customer 48
+customer 48 sits in barber 0's chair
+barber 0 gives customer 48 a haircut
+customer 52 arrives
+customer 52 takes a set in the waiting room
+customer 53 arrives
+customer 53 leaves without getting haircut
+barber 1 finishes customer 49's haircut
+customer 49 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 49
+customer 49 leaves satisfied
+barber 1 calls customer 49
+customer 49 sits in barber 1's chair
+barber 1 gives customer 49 a haircut
+customer 54 arrives
+customer 54 takes a set in the waiting room
+barber 0 finishes customer 53's haircut
+customer 53 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 53
+customer 53 leaves satisfied
+barber 0 calls customer 52
+customer 52 sits in barber 0's chair
+barber 0 gives customer 52 a haircut
+customer 55 arrives
+customer 55 takes a set in the waiting room
+customer 56 arrives
+customer 56 leaves without getting haircut
+customer 57 arrives
+customer 57 leaves without getting haircut
+barber 1 finishes customer 57's haircut
+customer 57 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 57
+customer 57 leaves satisfied
+barber 1 calls customer 52
+customer 52 sits in barber 1's chair
+barber 1 gives customer 52 a haircut
+barber 0 finishes customer 52's haircut
+customer 52 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 52
+customer 52 leaves satisfied
+barber 0 calls customer 57
+customer 57 sits in barber 0's chair
+barber 0 gives customer 57 a haircut
+customer 58 arrives
+customer 58 takes a set in the waiting room
+customer 59 arrives
+customer 59 takes a set in the waiting room
+barber 1 finishes customer 52's haircut
+customer 52 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 52
+customer 52 leaves satisfied
+barber 1 calls customer 57
+customer 57 sits in barber 1's chair
+barber 1 gives customer 57 a haircut
+customer 60 arrives
+customer 60 takes a set in the waiting room
+barber 0 finishes customer 57's haircut
+customer 57 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 57
+customer 57 leaves satisfied
+barber 0 calls customer 60
+customer 60 sits in barber 0's chair
+barber 0 gives customer 60 a haircut
+customer 61 arrives
+customer 61 takes a set in the waiting room
+customer 62 arrives
+customer 62 leaves without getting haircut
+barber 1 finishes customer 57's haircut
+customer 57 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 57
+customer 57 leaves satisfied
+barber 1 calls customer 62
+customer 62 sits in barber 1's chair
+barber 1 gives customer 62 a haircut
+customer 63 arrives
+customer 63 takes a set in the waiting room
+customer 64 arrives
+customer 64 leaves without getting haircut
+barber 0 finishes customer 63's haircut
+customer 63 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 63
+customer 63 leaves satisfied
+barber 0 calls customer 63
+customer 63 sits in barber 0's chair
+barber 0 gives customer 63 a haircut
+barber 1 finishes customer 63's haircut
+customer 63 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 63
+customer 63 leaves satisfied
+barber 1 calls customer 63
+customer 63 sits in barber 1's chair
+barber 1 gives customer 63 a haircut
+customer 65 arrives
+customer 65 takes a set in the waiting room
+customer 66 arrives
+customer 66 takes a set in the waiting room
+customer 67 arrives
+customer 67 leaves without getting haircut
+barber 0 finishes customer 63's haircut
+customer 63 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 63
+customer 63 leaves satisfied
+barber 0 calls customer 63
+customer 63 sits in barber 0's chair
+barber 0 gives customer 63 a haircut
+barber 1 finishes customer 63's haircut
+customer 63 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 63
+customer 63 leaves satisfied
+barber 1 calls customer 67
+customer 67 sits in barber 1's chair
+barber 1 gives customer 67 a haircut
+customer 68 arrives
+customer 68 takes a set in the waiting room
+customer 69 arrives
+customer 69 takes a set in the waiting room
+customer 70 arrives
+customer 70 leaves without getting haircut
+barber 1 finishes customer 70's haircut
+customer 70 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 70
+customer 70 leaves satisfied
+barber 1 calls customer 70
+customer 70 sits in barber 1's chair
+barber 1 gives customer 70 a haircut
+barber 0 finishes customer 63's haircut
+customer 63 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 63
+customer 63 leaves satisfied
+barber 0 calls customer 70
+customer 70 sits in barber 0's chair
+barber 0 gives customer 70 a haircut
+customer 71 arrives
+customer 71 takes a set in the waiting room
+customer 72 arrives
+customer 72 takes a set in the waiting room
+customer 73 arrives
+customer 73 leaves without getting haircut
+barber 1 finishes customer 73's haircut
+customer 73 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 73
+customer 73 leaves satisfied
+barber 1 calls customer 73
+customer 73 sits in barber 1's chair
+barber 1 gives customer 73 a haircut
+customer 74 arrives
+customer 74 takes a set in the waiting room
+barber 0 finishes customer 74's haircut
+customer 74 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 74
+customer 74 leaves satisfied
+barber 0 calls customer 74
+customer 74 sits in barber 0's chair
+barber 0 gives customer 74 a haircut
+customer 75 arrives
+customer 75 takes a set in the waiting room
+customer 76 arrives
+customer 76 leaves without getting haircut
+barber 1 finishes customer 75's haircut
+customer 75 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 75
+customer 75 leaves satisfied
+barber 1 calls customer 75
+customer 75 sits in barber 1's chair
+barber 1 gives customer 75 a haircut
+customer 77 arrives
+customer 77 takes a set in the waiting room
+customer 78 arrives
+customer 78 leaves without getting haircut
+barber 0 finishes customer 77's haircut
+customer 77 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 77
+customer 77 leaves satisfied
+barber 0 calls customer 77
+customer 77 sits in barber 0's chair
+barber 0 gives customer 77 a haircut
+customer 79 arrives
+customer 79 takes a set in the waiting room
+customer 80 arrives
+customer 80 leaves without getting haircut
+barber 1 finishes customer 77's haircut
+customer 77 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 77
+customer 77 leaves satisfied
+barber 1 calls customer 77
+customer 77 sits in barber 1's chair
+barber 1 gives customer 77 a haircut
+customer 81 arrives
+customer 81 takes a set in the waiting room
+barber 0 finishes customer 81's haircut
+customer 81 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 81
+customer 81 leaves satisfied
+barber 0 calls customer 81
+customer 81 sits in barber 0's chair
+barber 0 gives customer 81 a haircut
+customer 82 arrives
+customer 82 takes a set in the waiting room
+customer 83 arrives
+customer 83 leaves without getting haircut
+barber 1 finishes customer 82's haircut
+customer 82 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 82
+customer 82 leaves satisfied
+barber 1 calls customer 83
+customer 83 sits in barber 1's chair
+barber 1 gives customer 83 a haircut
+customer 84 arrives
+customer 84 takes a set in the waiting room
+barber 0 finishes customer 82's haircut
+customer 82 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 82
+customer 82 leaves satisfied
+barber 0 calls customer 82
+customer 82 sits in barber 0's chair
+barber 0 gives customer 82 a haircut
+customer 85 arrives
+customer 85 takes a set in the waiting room
+customer 86 arrives
+customer 86 leaves without getting haircut
+barber 1 finishes customer 86's haircut
+customer 86 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 86
+customer 86 leaves satisfied
+barber 1 calls customer 85
+customer 85 sits in barber 1's chair
+barber 1 gives customer 85 a haircut
+barber 0 finishes customer 85's haircut
+customer 85 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 85
+customer 85 leaves satisfied
+barber 0 calls customer 86
+customer 86 sits in barber 0's chair
+barber 0 gives customer 86 a haircut
+customer 87 arrives
+customer 87 takes a set in the waiting room
+customer 88 arrives
+customer 88 takes a set in the waiting room
+customer 89 arrives
+customer 89 leaves without getting haircut
+barber 0 finishes customer 87's haircut
+customer 87 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 87
+customer 87 leaves satisfied
+barber 0 calls customer 89
+customer 89 sits in barber 0's chair
+barber 0 gives customer 89 a haircut
+barber 1 finishes customer 89's haircut
+customer 89 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 89
+customer 89 leaves satisfied
+barber 1 calls customer 87
+customer 87 sits in barber 1's chair
+barber 1 gives customer 87 a haircut
+customer 90 arrives
+customer 90 takes a set in the waiting room
+customer 91 arrives
+customer 91 takes a set in the waiting room
+customer 92 arrives
+customer 92 leaves without getting haircut
+barber 0 finishes customer 91's haircut
+customer 91 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 91
+customer 91 leaves satisfied
+barber 0 calls customer 88
+customer 88 sits in barber 0's chair
+barber 0 gives customer 88 a haircut
+customer 93 arrives
+customer 93 takes a set in the waiting room
+barber 1 finishes customer 93's haircut
+customer 93 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 93
+customer 93 leaves satisfied
+barber 1 calls customer 93
+customer 93 sits in barber 1's chair
+barber 1 gives customer 93 a haircut
+customer 94 arrives
+customer 94 takes a set in the waiting room
+customer 95 arrives
+customer 95 leaves without getting haircut
+barber 0 finishes customer 88's haircut
+customer 88 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 88
+customer 88 leaves satisfied
+barber 0 calls customer 94
+customer 94 sits in barber 0's chair
+barber 0 gives customer 94 a haircut
+customer 96 arrives
+customer 96 takes a set in the waiting room
+barber 1 finishes customer 95's haircut
+customer 95 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 95
+customer 95 leaves satisfied
+barber 1 calls customer 95
+customer 95 sits in barber 1's chair
+barber 1 gives customer 95 a haircut
+customer 97 arrives
+customer 97 takes a set in the waiting room
+customer 98 arrives
+customer 98 leaves without getting haircut
+barber 0 finishes customer 98's haircut
+customer 98 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 98
+customer 98 leaves satisfied
+barber 0 calls customer 98
+customer 98 sits in barber 0's chair
+barber 0 gives customer 98 a haircut
+customer 99 arrives
+customer 99 takes a set in the waiting room
+barber 1 finishes customer 95's haircut
+customer 95 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 95
+customer 95 leaves satisfied
+barber 1 calls customer 99
+customer 99 sits in barber 1's chair
+barber 1 gives customer 99 a haircut
+customer 100 arrives
+customer 100 takes a set in the waiting room
+barber 0 finishes customer 99's haircut
+customer 99 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 99
+customer 99 leaves satisfied
+barber 0 calls customer 99
+customer 99 sits in barber 0's chair
+barber 0 gives customer 99 a haircut
+customer 101 arrives
+customer 101 takes a set in the waiting room
+customer 102 arrives
+customer 102 leaves without getting haircut
+barber 1 finishes customer 102's haircut
+customer 102 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 102
+customer 102 leaves satisfied
+barber 1 calls customer 102
+customer 102 sits in barber 1's chair
+barber 1 gives customer 102 a haircut
+customer 103 arrives
+customer 103 takes a set in the waiting room
+customer 104 arrives
+customer 104 leaves without getting haircut
+barber 0 finishes customer 104's haircut
+customer 104 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 104
+customer 104 leaves satisfied
+barber 0 calls customer 100
+customer 100 sits in barber 0's chair
+barber 0 gives customer 100 a haircut
+customer 105 arrives
+customer 105 takes a set in the waiting room
+barber 1 finishes customer 105's haircut
+customer 105 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 105
+customer 105 leaves satisfied
+barber 1 calls customer 105
+customer 105 sits in barber 1's chair
+barber 1 gives customer 105 a haircut
+customer 106 arrives
+customer 106 takes a set in the waiting room
+customer 107 arrives
+customer 107 leaves without getting haircut
+barber 0 finishes customer 100's haircut
+customer 100 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 100
+customer 100 leaves satisfied
+barber 0 calls customer 107
+customer 107 sits in barber 0's chair
+barber 0 gives customer 107 a haircut
+barber 1 finishes customer 107's haircut
+customer customer 107 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 107
+customer 107 leaves satisfied
+108 arrives
+customer 108 takes a set in the waiting room
+barber 1 calls customer 107
+customer 107 sits in barber 1's chair
+barber 1 gives customer 107 a haircut
+customer 109 arrives
+customer 109 takes a set in the waiting room
+customer 110 arrives
+customer 110 leaves without getting haircut
+barber 0 finishes customer 110's haircut
+customer 110 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 110
+customer 110 leaves satisfied
+barber 0 calls customer 110
+customer 110 sits in barber 0's chair
+barber 0 gives customer 110 a haircut
+barber 1 finishes customer 110's haircut
+customer 110 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 110
+customer 110 leaves satisfied
+barber 1 calls customer 108
+customer 108 sits in barber 1's chair
+barber 1 gives customer 108 a haircut
+customer 111 arrives
+customer 111 takes a set in the waiting room
+customer 112 arrives
+customer 112 takes a set in the waiting room
+barber 0 finishes customer 112's haircut
+customer 112 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 112
+customer 112 leaves satisfied
+barber 0 calls customer 112
+customer 112 sits in barber 0's chair
+barber 0 gives customer 112 a haircut
+customer 113 arrives
+customer 113 takes a set in the waiting room
+customer 114 arrives
+barber 1 finishes customer 114's haircut
+customer 114 gets up and proffers payment to barber 1customer 
+barber 1141 accepts payment form customer 114
+ leaves without getting haircut
+customer 114 leaves satisfied
+barber 1 calls customer 114
+customer 114 sits in barber 1's chair
+barber 1 gives customer 114 a haircut
+customer 115 arrives
+customer 115 takes a set in the waiting room
+customer 116 arrives
+customer 116 leaves without getting haircut
+barber 0 finishes customer 113's haircut
+customer 113 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 113
+customer 113 leaves satisfied
+barber 0 calls customer 113
+customer 113 sits in barber 0's chair
+barber 0 gives customer 113 a haircut
+barber 1 finishes customer 115's haircut
+customer 115 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 115
+customer 115 leaves satisfied
+barber 1 calls customer 113
+customer 113 sits in barber 1's chair
+barber 1 gives customer 113 a haircut
+customer 117 arrives
+customer 117 takes a set in the waiting room
+customer 118 arrives
+customer 118 takes a set in the waiting room
+barber 0 finishes customer 113's haircut
+customer 113 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 113
+customer 113 leaves satisfied
+barber 0 calls customer 118
+customer 118 sits in barber 0's chair
+barber 0 gives customer 118 a haircut
+customer 119 arrives
+customer 119 takes a set in the waiting room
+barber 1 finishes customer 113's haircut
+customer 113 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 113
+customer 113 leaves satisfied
+barber 1 calls customer 119
+customer 119 sits in barber 1's chair
+barber 1 gives customer 119 a haircut
+customer 120 arrives
+customer 120 takes a set in the waiting room
+customer 121 arrives
+customer 121 leaves without getting haircut
+barber 1 finishes customer 120's haircut
+customer 120 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 120
+customer 120 leaves satisfied
+barber 1 calls customer 120
+customer 120 sits in barber 1's chair
+barber 1 gives customer 120 a haircut
+barber 0 finishes customer 120's haircut
+customer 120 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 120
+customer 120 leaves satisfied
+barber 0 calls customer 120
+customer 120 sits in barber 0's chair
+barber 0 gives customer 120 a haircut
+customer 122 arrives
+customer 122 takes a set in the waiting room
+customer 123 arrives
+customer 123 takes a set in the waiting room
+customer 124 arrives
+customer 124 leaves without getting haircut
+barber 0 finishes customer 120's haircut
+customer 120 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 120
+customer 120 leaves satisfied
+barber 0 calls customer 120
+customer 120 sits in barber 0's chair
+barber 0 gives customer 120 a haircut
+customer 125 arrives
+customer 125 takes a set in the waiting room
+barber 1 finishes customer 120's haircut
+customer 120 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 120
+customer 120 leaves satisfied
+barber 1 calls customer 125
+customer 125 sits in barber 1's chair
+barber 1 gives customer 125 a haircut
+customer 126 arrives
+customer 126 takes a set in the waiting room
+customer 127 arrives
+customer 127 leaves without getting haircut
+customer 128 arrives
+customer 128 leaves without getting haircut
+barber 1 finishes customer 128's haircut
+customer 128 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 128
+customer 128 leaves satisfied
+barber 1 calls customer 128
+customer 128 sits in barber 1's chair
+barber 1 gives customer 128 a haircut
+barber 0 finishes customer 120's haircut
+customer 120 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 120
+customer 120 leaves satisfied
+barber 0 calls customer 128
+customer 128 sits in barber 0's chair
+barber 0 gives customer 128 a haircut
+customer 129 arrives
+customer 129 takes a set in the waiting room
+customer 130 arrives
+customer 130 takes a set in the waiting room
+barber 1 finishes customer 130's haircut
+customer 130 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 130
+customer 130 leaves satisfied
+barber 1 calls customer 130
+customer 130 sits in barber 1's chair
+barber 1 gives customer 130 a haircut
+customer 131 arrives
+customer 131 takes a set in the waiting room
+barber 0 finishes customer 131's haircut
+customer 131 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 131
+customer 131 leaves satisfied
+barber 0 calls customer 129
+customer 129 sits in barber 0's chair
+barber 0 gives customer 129 a haircut
+customer 132 arrives
+customer 132 takes a set in the waiting room
+customer 133 arrives
+customer 133 leaves without getting haircut
+barber 1 finishes customer 132's haircut
+customer 132 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 132
+customer 132 leaves satisfied
+barber 1 calls customer 132
+customer 132 sits in barber 1's chair
+barber 1 gives customer 132 a haircut
+customer 134 arrives
+customer 134 takes a set in the waiting room
+barber 0 finishes customer 129's haircut
+customer 129 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 129
+customer 129 leaves satisfied
+barber 0 calls customer 134
+customer 134 sits in barber 0's chair
+barber 0 gives customer 134 a haircut
+customer 135 arrives
+customer 135 takes a set in the waiting room
+customer 136 arrives
+customer 136 leaves without getting haircut
+barber 1 finishes customer 135's haircut
+customer 135 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 135
+customer 135 leaves satisfied
+barber 1 calls customer 135
+customer 135 sits in barber 1's chair
+barber 1 gives customer 135 a haircut
+customer 137 arrives
+customer 137 takes a set in the waiting room
+barber 0 finishes customer 135's haircut
+customer 135 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 135
+customer 135 leaves satisfied
+barber 0 calls customer 135
+customer 135 sits in barber 0's chair
+barber 0 gives customer 135 a haircut
+customer 138 arrives
+customer 138 takes a set in the waiting room
+customer 139 arrives
+customer 139 leaves without getting haircut
+barber 1 finishes customer 135's haircut
+customer 135 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 135
+customer 135 leaves satisfied
+barber 1 calls customer 135
+customer 135 sits in barber 1's chair
+barber 1 gives customer 135 a haircut
+customer 140 arrives
+customer 140 takes a set in the waiting room
+barber 0 finishes customer 135's haircut
+customer 135 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 135
+customer 135 leaves satisfied
+barber 0 calls customer 140
+customer 140 sits in barber 0's chair
+barber 0 gives customer 140 a haircut
+customer 141 arrives
+customer 141 takes a set in the waiting room
+barber 1 finishes customer 135's haircut
+customer 135 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 135
+customer 135 leaves satisfied
+barber 1 calls customer 139
+customer 139 sits in barber 1's chair
+barber 1 gives customer 139 a haircut
+customer 142 arrives
+customer 142 takes a set in the waiting room
+customer 143 arrives
+customer 143 leaves without getting haircut
+barber 0 finishes customer 143's haircut
+customer 143 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 143
+customer 143 leaves satisfied
+barber 0 calls customer 143
+customer 143 sits in barber 0's chair
+barber 0 gives customer 143 a haircut
+customer 144 arrives
+customer 144 takes a set in the waiting room
+barber 1 finishes customer 139's haircut
+customer 139 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 139
+customer 139 leaves satisfied
+barber 1 calls customer 144
+customer 144 sits in barber 1's chair
+barber 1 gives customer 144 a haircut
+customer 145 arrives
+customer 145 takes a set in the waiting room
+customer 146 arrives
+customer 146 leaves without getting haircut
+barber 0 finishes customer 146's haircut
+customer 146 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 146
+customer 146 leaves satisfied
+barber 0 calls customer 142
+customer 142 sits in barber 0's chair
+barber 0 gives customer 142 a haircut
+customer 147 arrives
+customer 147 takes a set in the waiting room
+barber 1 finishes customer 147's haircut
+customer 147 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 147
+customer 147 leaves satisfied
+barber 1 calls customer 147
+customer 147 sits in barber 1's chair
+barber 1 gives customer 147 a haircut
+customer 148 arrives
+customer 148 takes a set in the waiting room
+customer 149 arrives
+customer 149 leaves without getting haircut
+barber 0 finishes customer 142's haircut
+customer 142 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 142
+customer 142 leaves satisfied
+barber 0 calls customer 149
+customer 149 sits in barber 0's chair
+barber 0 gives customer 149 a haircut
+customer 150 arrives
+customer 150 takes a set in the waiting room
+customer 151 arrives
+customer 151 leaves without getting haircut
+barber 1 finishes customer 151's haircut
+customer 151 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 151
+customer 151 leaves satisfied
+barber 1 calls customer 151
+customer 151 sits in barber 1's chair
+barber 1 gives customer 151 a haircut
+barber 0 finishes customer 151's haircut
+customer 151 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 151
+customer 151 leaves satisfied
+barber 0 calls customer 151
+customer 151 sits in barber 0's chair
+barber 0 gives customer 151 a haircut
+customer 152 arrives
+customer 152 takes a set in the waiting room
+customer 153 arrives
+customer 153 takes a set in the waiting room
+customer 154 arrives
+customer 154 leaves without getting haircut
+barber 1 finishes customer 154's haircut
+customer 154 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 154
+customer 154 leaves satisfied
+barber 1 calls customer 153
+customer 153 sits in barber 1's chair
+barber 1 gives customer 153 a haircut
+barber 0 finishes customer 154's haircut
+customer 154 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 154
+customer 154 leaves satisfied
+barber 0 calls customer 154
+customer 154 sits in barber 0's chair
+barber 0 gives customer 154 a haircut
+customer 155 arrives
+customer 155 takes a set in the waiting room
+customer 156 arrives
+customer 156 takes a set in the waiting room
+customer 157 arrives
+customer 157 leaves without getting haircut
+barber 0 finishes customer 156's haircut
+customer 156 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 156
+customer 156 leaves satisfied
+barber 0 calls customer 153
+customer 153 sits in barber 0's chair
+barber 0 gives customer 153 a haircut
+barber 1 finishes customer 153's haircut
+customer 153 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 153
+customer 153 leaves satisfied
+barber 1 calls customer 156
+customer 156 sits in barber 1's chair
+barber 1 gives customer 156 a haircut
+customer 158 arrives
+customer 158 takes a set in the waiting room
+customer 159 arrives
+customer 159 takes a set in the waiting room
+customer 160 arrives
+customer 160 leaves without getting haircut
+barber 0 finishes customer 160's haircut
+customer 160 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 160
+customer 160 leaves satisfied
+barber 0 calls customer 156
+customer 156 sits in barber 0's chair
+barber 0 gives customer 156 a haircut
+customer 161 arrives
+customer 161 takes a set in the waiting room
+barber 1 finishes customer 156's haircut
+customer 156 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 156
+customer 156 leaves satisfied
+barber 1 calls customer 161
+customer 161 sits in barber 1's chair
+barber 1 gives customer 161 a haircut
+customer 162 arrives
+customer 162 takes a set in the waiting room
+customer 163 arrives
+customer 163 leaves without getting haircut
+barber 0 finishes customer 162's haircut
+customer 162 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 162
+customer 162 leaves satisfied
+barber 0 calls customer 163
+customer 163 sits in barber 0's chair
+barber 0 gives customer 163 a haircut
+customer 164 arrives
+customer 164 takes a set in the waiting room
+barber 1 finishes customer 164's haircut
+customer 164 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 164
+customer 164 leaves satisfied
+barber 1 calls customer 164
+customer 164 sits in barber 1's chair
+barber 1 gives customer 164 a haircut
+customer 165 arrives
+customer 165 takes a set in the waiting room
+customer 166 arrives
+customer 166 leaves without getting haircut
+barber 0 finishes customer 164's haircut
+customer 164 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 164
+customer 164 leaves satisfied
+barber 0 calls customer 166
+customer 166 sits in barber 0's chair
+barber 0 gives customer 166 a haircut
+customer 167 arrives
+customer 167 takes a set in the waiting room
+barber 1 finishes customer 164's haircut
+customer 164 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 164
+customer 164 leaves satisfied
+barber 1 calls customer 164
+customer 164 sits in barber 1's chair
+barber 1 gives customer 164 a haircut
+customer 168 arrives
+customer 168 takes a set in the waiting room
+customer 169 arrives
+customer 169 leaves without getting haircut
+customer 170 arrives
+customer 170 leaves without getting haircut
+barber 0 finishes customer 167's haircut
+customer 167 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 167
+customer 167 leaves satisfied
+barber 0 calls customer 167
+customer 167 sits in barber 0's chair
+barber 0 gives customer 167 a haircut
+barber 1 finishes customer 170's haircut
+customer 170 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 170
+customer 170 leaves satisfied
+barber 1 calls customer 167
+customer 167 sits in barber 1's chair
+barber 1 gives customer 167 a haircut
+customer 171 arrives
+customer 171 takes a set in the waiting room
+customer 172 arrives
+customer 172 takes a set in the waiting room
+customer 173 arrives
+customer 173 leaves without getting haircut
+barber 0 finishes customer 171's haircut
+customer 171 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 171
+customer 171 leaves satisfied
+barber 0 calls customer 173
+customer 173 sits in barber 0's chair
+barber 0 gives customer 173 a haircut
+customer 174 arrives
+customer 174 takes a set in the waiting room
+barber 1 finishes customer 171's haircut
+customer 171 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 171
+customer 171 leaves satisfied
+barber 1 calls customer 171
+customer 171 sits in barber 1's chair
+barber 1 gives customer 171 a haircut
+customer 175 arrives
+customer 175 takes a set in the waiting room
+customer 176 arrives
+customer 176 leaves without getting haircut
+barber 0 finishes customer 176's haircut
+customer 176 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 176
+customer 176 leaves satisfied
+barber 0 calls customer 176
+customer 176 sits in barber 0's chair
+barber 0 gives customer 176 a haircut
+barber 1 finishes customer 171's haircut
+customer 171 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 171
+customer 171 leaves satisfied
+barber 1 calls customer 176
+customer 176 sits in barber 1's chair
+barber 1 gives customer 176 a haircut
+customer 177 arrives
+customer 177 takes a set in the waiting room
+customer 178 arrives
+customer 178 takes a set in the waiting room
+customer 179 arrives
+customer 179 leaves without getting haircut
+barber 1 finishes customer 177's haircut
+customer 177 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 177
+customer 177 leaves satisfied
+barber 1 calls customer 175
+customer 175 sits in barber 1's chair
+barber 1 gives customer 175 a haircut
+customer 180 arrives
+customer 180 takes a set in the waiting room
+barber 0 finishes customer 180's haircut
+customer 180 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 180
+customer 180 leaves satisfied
+barber 0 calls customer 180
+customer 180 sits in barber 0's chair
+barber 0 gives customer 180 a haircut
+customer 181 arrives
+customer 181 takes a set in the waiting room
+customer 182 arrives
+customer 182 leaves without getting haircut
+barber 1 finishes customer 175's haircut
+customer 175 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 175
+customer 175 leaves satisfied
+barber 1 calls customer 179
+customer 179 sits in barber 1's chair
+barber 1 gives customer 179 a haircut
+customer 183 arrives
+customer 183 takes a set in the waiting room
+barber 0 finishes customer 182's haircut
+customer 182 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 182
+customer 182 leaves satisfied
+barber 0 calls customer 182
+customer 182 sits in barber 0's chair
+barber 0 gives customer 182 a haircut
+customer 184 arrives
+customer 184 takes a set in the waiting room
+barber 1 finishes customer 184's haircut
+customer 184 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 184
+customer 184 leaves satisfied
+barber 1 calls customer 182
+customer 182 sits in barber 1's chair
+barber 1 gives customer 182 a haircut
+customer 185 arrives
+customer 185 takes a set in the waiting room
+customer 186 arrives
+customer 186 leaves without getting haircut
+barber 0 finishes customer 186's haircut
+customer 186 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 186
+customer 186 leaves satisfied
+barber 0 calls customer 185
+customer 185 sits in barber 0's chair
+barber 0 gives customer 185 a haircut
+customer 187 arrives
+customer 187 takes a set in the waiting room
+barber 1 finishes customer 187's haircut
+customer 187 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 187
+customer 187 leaves satisfied
+customer 188 arrives
+customer 188 leaves without getting haircut
+barber 1 calls customer 188
+customer 188 sits in barber 1's chair
+barber 1 gives customer 188 a haircut
+customer 189 arrives
+customer 189 takes a set in the waiting room
+customer 190 arrives
+customer 190 leaves without getting haircut
+barber 0 finishes customer 190's haircut
+customer 190 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 190
+customer 190 leaves satisfied
+barber 0 calls customer 190
+customer 190 sits in barber 0's chair
+barber 0 gives customer 190 a haircut
+barber 1 finishes customer 190's haircut
+customer 190 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 190
+customer 190 leaves satisfied
+barber 1 calls customer 189
+customer 189 sits in barber 1's chair
+barber 1 gives customer 189 a haircut
+customer 191 arrives
+customer 191 takes a set in the waiting room
+customer 192 arrives
+customer 192 takes a set in the waiting room
+barber 0 finishes customer 190's haircut
+customer 190 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 190
+customer 190 leaves satisfied
+barber 0 calls customer 192
+customer 192 sits in barber 0's chair
+barber 0 gives customer 192 a haircut
+customer 193 arrives
+customer 193 takes a set in the waiting room
+customer 194 arrives
+customer 194 leaves without getting haircut
+barber 1 finishes customer 194's haircut
+customer 194 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 194
+customer 194 leaves satisfied
+barber 1 calls customer 194
+customer 194 sits in barber 1's chair
+barber 1 gives customer 194 a haircut
+customer 195 arrives
+customer 195 takes a set in the waiting room
+barber 0 finishes customer 194's haircut
+customer 194 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 194
+customer 194 leaves satisfied
+barber 0 calls customer 194
+customer 194 sits in barber 0's chair
+barber 0 gives customer 194 a haircut
+customer 196 arrives
+customer 196 takes a set in the waiting room
+customer 197 arrives
+customer 197 leaves without getting haircut
+barber 1 finishes customer 194's haircut
+customer 194 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 194
+customer 194 leaves satisfied
+barber 1 calls customer 194
+customer 194 sits in barber 1's chair
+barber 1 gives customer 194 a haircut
+customer 198 arrives
+customer 198 takes a set in the waiting room
+barber 0 finishes customer 194's haircut
+customer 194 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 194
+customer 194 leaves satisfied
+barber 0 calls customer 198
+customer 198 sits in barber 0's chair
+barber 0 gives customer 198 a haircut
+customer 199 arrives
+customer 199 takes a set in the waiting room
+barber 1 finishes customer 199's haircut
+customer 199 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 199
+customer 199 leaves satisfied
+barber 1 calls customer 198
+customer 198 sits in barber 1's chair
+barber 1 gives customer 198 a haircut
+customer 200 arrives
+customer 200 takes a set in the waiting room
+customer 201 arrives
+customer 201 leaves without getting haircut
+barber 0 finishes customer 198's haircut
+customer 198 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 198
+customer 198 leaves satisfied
+barber 0 calls customer 198
+customer 198 sits in barber 0's chair
+barber 0 gives customer 198 a haircut
+customer 202 arrives
+customer 202 takes a set in the waiting room
+barber 1 finishes customer 198's haircut
+customer 198 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 198
+customer 198 leaves satisfied
+barber 1 calls customer 202
+customer 202 sits in barber 1's chair
+barber 1 gives customer 202 a haircut
+customer 203 arrives
+customer 203 takes a set in the waiting room
+customer 204 arrives
+customer 204 leaves without getting haircut
+barber 0 finishes customer 204's haircut
+customer 204 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 204
+customer 204 leaves satisfied
+barber 0 calls customer 202
+customer 202 sits in barber 0's chair
+barber 0 gives customer 202 a haircut
+customer 205 arrives
+customer 205 takes a set in the waiting room
+barber 1 finishes customer 202's haircut
+customer 202 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 202
+customer 202 leaves satisfied
+barber 1 calls customer 202
+customer 202 sits in barber 1's chair
+barber 1 gives customer 202 a haircut
+customer 206 arrives
+customer 206 takes a set in the waiting room
+barber 0 finishes customer 202's haircut
+customer 202 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 202
+customer 202 leaves satisfied
+barber 0 calls customer 206
+customer 206 sits in barber 0's chair
+barber 0 gives customer 206 a haircut
+customer 207 arrives
+customer 207 takes a set in the waiting room
+customer 208 arrives
+customer 208 leaves without getting haircut
+customer 209 arrives
+customer 209 leaves without getting haircut
+barber 1 finishes customer 209's haircut
+customer 209 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 209
+customer 209 leaves satisfied
+barber 1 calls customer 205
+customer 205 sits in barber 1's chair
+barber 1 gives customer 205 a haircut
+customer 210 arrives
+customer 210 takes a set in the waiting room
+barber 0 finishes customer 210's haircut
+customer 210 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 210
+customer 210 leaves satisfied
+barber 0 calls customer 210
+customer 210 sits in barber 0's chair
+barber 0 gives customer 210 a haircut
+customer 211 arrives
+customer 211 takes a set in the waiting room
+customer 212 arrives
+customer 212 leaves without getting haircut
+barber 1 finishes customer 205's haircut
+customer 205 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 205
+customer 205 leaves satisfied
+barber 1 calls customer 212
+customer 212 sits in barber 1's chair
+barber 1 gives customer 212 a haircut
+customer 213 arrives
+customer 213 takes a set in the waiting room
+barber 0 finishes customer 210's haircut
+customer 210 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 210
+customer 210 leaves satisfied
+barber 0 calls customer 210
+customer 210 sits in barber 0's chair
+barber 0 gives customer 210 a haircut
+customer 214 arrives
+customer 214 takes a set in the waiting room
+customer 215 arrives
+customer 215 leaves without getting haircut
+barber 1 finishes customer 214's haircut
+customer 214 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 214
+customer 214 leaves satisfied
+barber 1 calls customer 214
+customer 214 sits in barber 1's chair
+barber 1 gives customer 214 a haircut
+customer 216 arrives
+customer 216 takes a set in the waiting room
+barber 0 finishes customer 216's haircut
+customer 216 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 216
+customer 216 leaves satisfied
+barber 0 calls customer 214
+customer 214 sits in barber 0's chair
+barber 0 gives customer 214 a haircut
+customer 217 arrives
+customer 217 takes a set in the waiting room
+customer 218 arrives
+customer 218 leaves without getting haircut
+barber 1 finishes customer 218's haircut
+customer 218 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 218
+customer 218 leaves satisfied
+barber 1 calls customer 218
+customer 218 sits in barber 1's chair
+barber 1 gives customer 218 a haircut
+customer 219 arrives
+customer 219 takes a set in the waiting room
+barber 0 finishes customer 219's haircut
+customer 219 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 219
+customer 219 leaves satisfied
+barber 0 calls customer 217
+customer 217 sits in barber 0's chair
+barber 0 gives customer 217 a haircut
+customer 220 arrives
+customer 220 takes a set in the waiting room
+customer 221 arrives
+customer 221 leaves without getting haircut
+barber 1 finishes customer 219's haircut
+customer 219 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 219
+customer 219 leaves satisfied
+barber 1 calls customer 221
+customer 221 sits in barber 1's chair
+barber 1 gives customer 221 a haircut
+customer 222 arrives
+customer 222 takes a set in the waiting room
+barber 0 finishes customer 222's haircut
+customer 222 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 222
+customer 222 leaves satisfied
+barber 0 calls customer 219
+customer 219 sits in barber 0's chair
+barber 0 gives customer 219 a haircut
+customer 223 arrives
+customer 223 takes a set in the waiting room
+barber 1 finishes customer 222's haircut
+customer 222 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 222
+customer 222 leaves satisfied
+barber 1 calls customer 222
+customer 222 sits in barber 1's chair
+barber 1 gives customer 222 a haircut
+customer 224 arrives
+customer 224 takes a set in the waiting room
+barber 0 finishes customer 223's haircut
+customer 223 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 223
+customer 223 leaves satisfied
+barber 0 calls customer 224
+customer 224 sits in barber 0's chair
+customer 225 arrives
+barber 0 gives customer 225 a haircut
+customer 225 takes a set in the waiting room
+customer 226 arrives
+customer 226 leaves without getting haircut
+customer 227 arrives
+customer 227 leaves without getting haircut
+barber 1 finishes customer 227's haircut
+customer 227 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 227
+customer 227 leaves satisfied
+barber 1 calls customer 223
+customer 223 sits in barber 1's chair
+barber 1 gives customer 223 a haircut
+customer 228 arrives
+customer 228 takes a set in the waiting room
+barber 0 finishes customer 228's haircut
+customer 228 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 228
+customer 228 leaves satisfied
+barber 0 calls customer 228
+customer 228 sits in barber 0's chair
+barber 0 gives customer 228 a haircut
+customer 229 arrives
+customer 229 takes a set in the waiting room
+barber 1 finishes customer 223's haircut
+customer 223 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 223
+customer 223 leaves satisfied
+barber 1 calls customer 229
+customer 229 sits in barber 1's chair
+barber 1 gives customer 229 a haircut
+customer 230 arrives
+customer 230 takes a set in the waiting room
+barber 0 finishes customer 229's haircut
+customer 229 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 229
+customer 229 leaves satisfied
+barber 0 calls customer 229
+customer 229 sits in barber 0's chair
+barber 0 gives customer 229 a haircut
+customer 231 arrives
+customer 231 takes a set in the waiting room
+barber 1 finishes customer 229's haircut
+customer 229 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 229
+customer 229 leaves satisfied
+barber 1 calls customer 229
+customer 229 sits in barber 1's chair
+barber 1 gives customer 229 a haircut
+customer 232 arrives
+customer 232 takes a set in the waiting room
+customer 233 arrives
+customer 233 leaves without getting haircut
+barber 0 finishes customer 232's haircut
+customer 232 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 232
+customer 232 leaves satisfied
+barber 0 calls customer 233
+customer 233 sits in barber 0's chair
+barber 0 gives customer 233 a haircut
+customer 234 arrives
+customer 234 takes a set in the waiting room
+customer 235 arrives
+customer 235 leaves without getting haircut
+barber 1 finishes customer 235's haircut
+customer 235 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 235
+customer 235 leaves satisfied
+barber 1 calls customer 233
+customer 233 sits in barber 1's chair
+barber 1 gives customer 233 a haircut
+barber 0 finishes customer 233's haircut
+customer 233 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 233
+customer 233 leaves satisfied
+barber 0 calls customer 235
+customer 235 sits in barber 0's chair
+barber 0 gives customer 235 a haircut
+customer 236 arrives
+customer 236 takes a set in the waiting room
+customer 237 arrives
+customer 237 takes a set in the waiting room
+customer 238 arrives
+customer 238 leaves without getting haircut
+barber 1 finishes customer 238's haircut
+customer 238 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 238
+customer 238 leaves satisfied
+barber 1 calls customer 235
+customer 235 sits in barber 1's chair
+barber 1 gives customer 235 a haircut
+customer 239 arrives
+customer 239 takes a set in the waiting room
+barber 0 finishes customer 235's haircut
+customer 235 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 235
+customer 235 leaves satisfied
+barber 0 calls customer 239
+customer 239 sits in barber 0's chair
+barber 0 gives customer 239 a haircut
+customer 240 arrives
+customer 240 takes a set in the waiting room
+customer 241 arrives
+customer 241 leaves without getting haircut
+barber 1 finishes customer 235's haircut
+customer 235 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 235
+customer 235 leaves satisfied
+barber 1 calls customer 241
+customer 241 sits in barber 1's chair
+barber 1 gives customer 241 a haircut
+customer 242 arrives
+customer 242 takes a set in the waiting room
+customer 243 arrives
+customer 243 leaves without getting haircut
+barber 0 finishes customer 242's haircut
+customer 242 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 242
+customer 242 leaves satisfied
+barber 0 calls customer 242
+customer 242 sits in barber 0's chair
+barber 0 gives customer 242 a haircut
+customer 244 arrives
+customer 244 takes a set in the waiting room
+customer 245 arrives
+customer 245 leaves without getting haircut
+barber 1 finishes customer 245's haircut
+customer 245 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 245
+customer 245 leaves satisfied
+barber 1 calls customer 245
+customer 245 sits in barber 1's chair
+barber 1 gives customer 245 a haircut
+customer 246 arrives
+customer 246 takes a set in the waiting room
+customer 247 arrives
+customer 247 leaves without getting haircut
+barber 0 finishes customer 247's haircut
+customer 247 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 247
+customer 247 leaves satisfied
+barber 0 calls customer 247
+customer 247 sits in barber 0's chair
+barber 0 gives customer 247 a haircut
+customer 248 arrives
+customer 248 takes a set in the waiting room
+barber 1 finishes customer 247's haircut
+customer 247 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 247
+customer 247 leaves satisfied
+barber 1 calls customer 247
+customer 247 sits in barber 1's chair
+barber 1 gives customer 247 a haircut
+customer 249 arrives
+customer 249 takes a set in the waiting room
+customer 250 arrives
+customer 250 leaves without getting haircut
+barber 0 finishes customer 247's haircut
+customer 247 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 247
+customer 247 leaves satisfied
+barber 0 calls customer 247
+customer 247 sits in barber 0's chair
+barber 0 gives customer 247 a haircut
+customer 251 arrives
+customer 251 takes a set in the waiting room
+customer 252 arrives
+customer 252 leaves without getting haircut
+barber 1 finishes customer 252's haircut
+customer 252 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 252
+customer 252 leaves satisfied
+barber 1 calls customer 250
+customer 250 sits in barber 1's chair
+barber 1 gives customer 250 a haircut
+customer 253 arrives
+customer 253 takes a set in the waiting room
+barber 0 finishes customer 253's haircut
+customer 253 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 253
+customer 253 leaves satisfied
+barber 0 calls customer 250
+customer 250 sits in barber 0's chair
+barber 0 gives customer 250 a haircut
+customer 254 arrives
+customer 254 takes a set in the waiting room
+customer 255 arrives
+customer 255 leaves without getting haircut
+barber 1 finishes customer 254's haircut
+customer 254 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 254
+customer 254 leaves satisfied
+barber 1 calls customer 255
+customer 255 sits in barber 1's chair
+barber 1 gives customer 255 a haircut
+customer 256 arrives
+customer 256 takes a set in the waiting room
+barber 0 finishes customer 256's haircut
+customer 256 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 256
+customer 256 leaves satisfied
+barber 0 calls customer 255
+customer 255 sits in barber 0's chair
+barber 0 gives customer 255 a haircut
+customer 257 arrives
+customer 257 takes a set in the waiting room
+customer 258 arrives
+customer 258 leaves without getting haircut
+barber 1 finishes customer 257's haircut
+customer 257 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 257
+customer 257 leaves satisfied
+barber 1 calls customer 258
+customer 258 sits in barber 1's chair
+barber 1 gives customer 258 a haircut
+barber 0 finishes customer 257's haircut
+customer 257 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 257
+customer 257 leaves satisfied
+barber 0 calls customer 258
+customer 258 sits in barber 0's chair
+barber 0 gives customer 258 a haircut
+customer 259 arrives
+customer 259 takes a set in the waiting room
+customer 260 arrives
+customer 260 takes a set in the waiting room
+customer 261 arrives
+customer 261 leaves without getting haircut
+barber 0 finishes customer 258's haircut
+customer 258 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 258
+customer 258 leaves satisfied
+barber 0 calls customer 261
+customer 261 sits in barber 0's chair
+barber 0 gives customer 261 a haircut
+barber 1 finishes customer 258's haircut
+customer 258 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 258
+customer 258 leaves satisfied
+barber 1 calls customer 261
+customer 261 sits in barber 1's chair
+barber 1 gives customer 261 a haircut
+customer 262 arrives
+customer 262 takes a set in the waiting room
+customer 263 arrives
+customer 263 takes a set in the waiting room
+barber 0 finishes customer 261's haircut
+customer 261 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 261
+customer 261 leaves satisfied
+barber 0 calls customer 261
+customer 261 sits in barber 0's chair
+barber 0 gives customer 261 a haircut
+customer 264 arrives
+customer 264 takes a set in the waiting room
+barber 1 finishes customer 264's haircut
+customer 264 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 264
+customer 264 leaves satisfied
+barber 1 calls customer 262
+customer 262 sits in barber 1's chair
+barber 1 gives customer 262 a haircut
+customer 265 arrives
+customer 265 takes a set in the waiting room
+customer 266 arrives
+customer 266 leaves without getting haircut
+barber 0 finishes customer 266's haircut
+customer 266 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 266
+customer 266 leaves satisfied
+barber 0 calls customer 265
+customer 265 sits in barber 0's chair
+barber 0 gives customer 265 a haircut
+customer 267 arrives
+customer 267 takes a set in the waiting room
+barber 1 finishes customer 262's haircut
+customer 262 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 262
+customer 262 leaves satisfied
+barber 1 calls customer 267
+customer 267 sits in barber 1's chair
+barber 1 gives customer 267 a haircut
+customer 268 arrives
+customer 268 takes a set in the waiting room
+customer 269 arrives
+customer 269 leaves without getting haircut
+barber 0 finishes customer 269's haircut
+customer 269 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 269
+customer 269 leaves satisfied
+barber 0 calls customer 269
+customer 269 sits in barber 0's chair
+barber 0 gives customer 269 a haircut
+barber 1 finishes customer 267's haircut
+customer 267 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 267
+customer 267 leaves satisfied
+barber 1 calls customer 267
+customer 267 sits in barber 1's chair
+barber 1 gives customer 267 a haircut
+customer 270 arrives
+customer 270 takes a set in the waiting room
+customer 271 arrives
+customer 271 takes a set in the waiting room
+customer 272 arrives
+customer 272 leaves without getting haircut
+barber 0 finishes customer 271's haircut
+customer 271 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 271
+customer 271 leaves satisfied
+barber 0 calls customer 271
+customer 271 sits in barber 0's chair
+barber 0 gives customer 271 a haircut
+barber 1 finishes customer 270's haircut
+customer 270 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 270
+customer 270 leaves satisfied
+barber 1 calls customer 270
+customer 270 sits in barber 1's chair
+barber 1 gives customer 270 a haircut
+customer 273 arrives
+customer 273 takes a set in the waiting room
+customer 274 arrives
+customer 274 takes a set in the waiting room
+customer 275 arrives
+customer 275 leaves without getting haircut
+barber 0 finishes customer 275's haircut
+customer 275 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 275
+customer 275 leaves satisfied
+barber 0 calls customer 275
+customer 275 sits in barber 0's chair
+barber 0 gives customer 275 a haircut
+customer 276 arrives
+customer 276 takes a set in the waiting room
+barber 1 finishes customer 276's haircut
+customer 276 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 276
+customer 276 leaves satisfied
+barber 1 calls customer 275
+customer 275 sits in barber 1's chair
+barber 1 gives customer 275 a haircut
+customer 277 arrives
+customer 277 takes a set in the waiting room
+customer 278 arrives
+customer 278 leaves without getting haircut
+barber 0 finishes customer 278's haircut
+customer 278 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 278
+customer 278 leaves satisfied
+barber 0 calls customer 276
+customer 276 sits in barber 0's chair
+barber 0 gives customer 276 a haircut
+customer 279 arrives
+customer 279 takes a set in the waiting room
+barber 1 finishes customer 279's haircut
+customer 279 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 279
+customer 279 leaves satisfied
+barber 1 calls customer 276
+customer 276 sits in barber 1's chair
+barber 1 gives customer 276 a haircut
+customer 280 arrives
+customer 280 takes a set in the waiting room
+customer 281 arrives
+customer 281 leaves without getting haircut
+barber 0 finishes customer 276's haircut
+customer 276 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 276
+customer 276 leaves satisfied
+barber 0 calls customer 281
+customer 281 sits in barber 0's chair
+barber 0 gives customer 281 a haircut
+barber 1 finishes customer 276's haircut
+customer 276 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 276
+customer 276 leaves satisfied
+barber 1 calls customer 281
+customer 281 sits in barber 1's chair
+barber 1 gives customer 281 a haircut
+customer 282 arrives
+customer 282 takes a set in the waiting room
+customer 283 arrives
+customer 283 takes a set in the waiting room
+customer 284 arrives
+customer 284 leaves without getting haircut
+barber 1 finishes customer 281's haircut
+customer 281 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 281
+customer 281 leaves satisfied
+barber 1 calls customer 281
+customer 281 sits in barber 1's chair
+barber 1 gives customer 281 a haircut
+customer 285 arrives
+customer 285 takes a set in the waiting room
+barber 0 finishes customer 281's haircut
+customer 281 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 281
+customer 281 leaves satisfied
+barber 0 calls customer 285
+customer 285 sits in barber 0's chair
+barber 0 gives customer 285 a haircut
+customer 286 arrives
+customer 286 takes a set in the waiting room
+customer 287 arrives
+customer 287 leaves without getting haircut
+barber 1 finishes customer 281's haircut
+customer 281 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 281
+customer 281 leaves satisfied
+barber 1 calls customer 287
+customer 287 sits in barber 1's chair
+barber 1 gives customer 287 a haircut
+customer 288 arrives
+customer 288 takes a set in the waiting room
+barber 0 finishes customer 288's haircut
+customer 288 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 288
+customer 288 leaves satisfied
+barber 0 calls customer 288
+customer 288 sits in barber 0's chair
+barber 0 gives customer 288 a haircut
+customer 289 arrives
+customer 289 takes a set in the waiting room
+customer 290 arrives
+customer 290 leaves without getting haircut
+barber 0 finishes customer 290's haircut
+customer 290 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 290
+customer 290 leaves satisfied
+barber 0 calls customer 290
+customer 290 sits in barber 0's chair
+barber 0 gives customer 290 a haircut
+customer 291 arrives
+customer 291 takes a set in the waiting room
+barber 1 finishes customer 290's haircut
+customer 290 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 290
+customer 290 leaves satisfied
+barber 1 calls customer 290
+customer 290 sits in barber 1's chair
+barber 1 gives customer 290 a haircut
+customer 292 arrives
+customer 292 takes a set in the waiting room
+customer 293 arrives
+customer 293 leaves without getting haircut
+barber 0 finishes customer 290's haircut
+customer 290 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 290
+customer 290 leaves satisfied
+barber 0 calls customer 290
+customer 290 sits in barber 0's chair
+barber 0 gives customer 290 a haircut
+customer 294 arrives
+customer 294 takes a set in the waiting room
+barber 1 finishes customer 290's haircut
+customer 290 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 290
+customer 290 leaves satisfied
+barber 1 calls customer 294
+customer 294 sits in barber 1's chair
+barber 1 gives customer 294 a haircut
+customer 295 arrives
+customer 295 takes a set in the waiting room
+customer 296 arrives
+customer 296 leaves without getting haircut
+barber 1 finishes customer 296's haircut
+customer 296 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 296
+customer 296 leaves satisfied
+barber 1 calls customer 296
+customer 296 sits in barber 1's chair
+barber 1 gives customer 296 a haircut
+customer 297 arrives
+customer 297 takes a set in the waiting room
+barber 0 finishes customer 290's haircut
+customer 290 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 290
+customer 290 leaves satisfied
+barber 0 calls customer 297
+customer 297 sits in barber 0's chair
+barber 0 gives customer 297 a haircut
+customer 298 arrives
+customer 298 takes a set in the waiting room
+customer 299 arrives
+customer 299 leaves without getting haircut
+barber 1 finishes customer 299's haircut
+customer 299 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 299
+customer 299 leaves satisfied
+barber 1 calls customer 299
+customer 299 sits in barber 1's chair
+barber 1 gives customer 299 a haircut
+customer 300 arrives
+customer 300 takes a set in the waiting room
+barber 0 finishes customer 300's haircut
+customer 300 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 300
+customer 300 leaves satisfied
+barber 0 calls customer 300
+customer 300 sits in barber 0's chair
+barber 0 gives customer 300 a haircut
+customer 301 arrives
+customer 301 takes a set in the waiting room
+barber 1 finishes customer 300's haircut
+customer 300 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 300
+customer 300 leaves satisfied
+barber 1 calls customer 298
+customer 298 sits in barber 1's chair
+barber 1 gives customer 298 a haircut
+customer 302 arrives
+customer 302 takes a set in the waiting room
+customer 303 arrives
+customer 303 leaves without getting haircut
+customer 304 arrives
+customer 304 leaves without getting haircut
+barber 0 finishes customer 304's haircut
+customer 304 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 304
+customer 304 leaves satisfied
+barber 0 calls customer 304
+customer 304 sits in barber 0's chair
+barber 0 gives customer 304 a haircut
+barber 1 finishes customer 298's haircut
+customer 298 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 298
+customer 298 leaves satisfied
+barber 1 calls customer 301
+customer 301 sits in barber 1's chair
+barber 1 gives customer 301 a haircut
+customer 305 arrives
+customer 305 takes a set in the waiting room
+customer 306 arrives
+customer 306 takes a set in the waiting room
+barber 0 finishes customer 304's haircut
+customer 304 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 304
+customer 304 leaves satisfied
+barber 0 calls customer 304
+customer 304 sits in barber 0's chair
+barber 0 gives customer 304 a haircut
+customer 307 arrives
+customer 307 takes a set in the waiting room
+customer 308 arrives
+customer 308 leaves without getting haircut
+barber 1 finishes customer 301's haircut
+customer 301 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 301
+customer 301 leaves satisfied
+barber 1 calls customer 306
+customer 306 sits in barber 1's chair
+barber 1 gives customer 306 a haircut
+customer 309 arrives
+customer 309 takes a set in the waiting room
+barber 0 finishes customer 307's haircut
+customer 307 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 307
+customer 307 leaves satisfied
+barber 0 calls customer 306
+customer 306 sits in barber 0's chair
+barber 0 gives customer 306 a haircut
+customer 310 arrives
+customer 310 takes a set in the waiting room
+customer 311 arrives
+customer 311 leaves without getting haircut
+barber 1 finishes customer 310's haircut
+customer 310 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 310
+customer 310 leaves satisfied
+barber 1 calls customer 307
+customer 307 sits in barber 1's chair
+barber 1 gives customer 307 a haircut
+customer 312 arrives
+customer 312 takes a set in the waiting room
+barber 0 finishes customer 310's haircut
+customer 310 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 310
+customer 310 leaves satisfied
+barber 0 calls customer 311
+customer 311 sits in barber 0's chair
+barber 0 gives customer 311 a haircut
+customer 313 arrives
+customer 313 takes a set in the waiting room
+barber 1 finishes customer 312's haircut
+customer 312 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 312
+customer 312 leaves satisfied
+barber 1 calls customer 313
+customer 313 sits in barber 1's chair
+barber 1 gives customer 313 a haircut
+customer 314 arrives
+customer 314 takes a set in the waiting room
+customer 315 arrives
+customer 315 leaves without getting haircut
+barber 0 finishes customer 311's haircut
+customer 311 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 311
+customer 311 leaves satisfied
+barber 0 calls customer 312
+customer 312 sits in barber 0's chair
+barber 0 gives customer 312 a haircut
+customer 316 arrives
+customer 316 takes a set in the waiting room
+barber 1 finishes customer 316's haircut
+customer 316 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 316
+customer 316 leaves satisfied
+barber 1 calls customer 316
+customer 316 sits in barber 1's chair
+barber 1 gives customer 316 a haircut
+customer 317 arrives
+customer 317 takes a set in the waiting room
+customer 318 arrives
+customer 318 leaves without getting haircut
+barber 0 finishes customer 318's haircut
+customer 318 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 318
+customer 318 leaves satisfied
+barber 0 calls customer 317
+customer 317 sits in barber 0's chair
+barber 0 gives customer 317 a haircut
+customer 319 arrives
+customer 319 takes a set in the waiting room
+barber 1 finishes customer 317's haircut
+customer 317 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 317
+customer 317 leaves satisfied
+barber 1 calls customer 317
+customer 317 sits in barber 1's chair
+barber 1 gives customer 317 a haircut
+customer 320 arrives
+customer 320 takes a set in the waiting room
+customer 321 arrives
+customer 321 leaves without getting haircut
+customer 322 arrives
+customer 322 leaves without getting haircut
+barber 0 finishes customer 317's haircut
+customer 317 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 317
+customer 317 leaves satisfied
+barber 0 calls customer 317
+customer 317 sits in barber 0's chair
+barber 0 gives customer 317 a haircut
+barber 1 finishes customer 317's haircut
+customer 317 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 317
+customer 317 leaves satisfied
+barber 1 calls customer 319
+customer 319 sits in barber 1's chair
+barber 1 gives customer 319 a haircut
+customer 323 arrives
+customer 323 takes a set in the waiting room
+customer 324 arrives
+customer 324 takes a set in the waiting room
+barber 0 finishes customer 323's haircut
+customer 323 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 323
+customer 323 leaves satisfied
+barber 0 calls customer 322
+customer 322 sits in barber 0's chair
+barber 0 gives customer 322 a haircut
+customer 325 arrives
+customer 325 takes a set in the waiting room
+customer 326 arrives
+customer 326 leaves without getting haircut
+barber 1 finishes customer 319's haircut
+customer 319 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 319
+customer 319 leaves satisfied
+barber 1 calls customer 323
+customer 323 sits in barber 1's chair
+barber 1 gives customer 323 a haircut
+customer 327 arrives
+customer 327 takes a set in the waiting room
+customer 328 arrives
+customer 328 leaves without getting haircut
+barber 0 finishes customer 326's haircut
+customer 326 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 326
+customer 326 leaves satisfied
+barber 0 calls customer 324
+customer 324 sits in barber 0's chair
+barber 0 gives customer 324 a haircut
+barber 1 finishes customer 328's haircut
+customer 328 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 328
+customer 328 leaves satisfied
+barber 1 calls customer 326
+customer 326 sits in barber 1's chair
+barber 1 gives customer 326 a haircut
+customer 329 arrives
+customer 329 takes a set in the waiting room
+customer 330 arrives
+customer 330 takes a set in the waiting room
+barber 0 finishes customer 324's haircut
+customer 324 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 324
+customer 324 leaves satisfied
+barber 0 calls customer 329
+customer 329 sits in barber 0's chair
+barber 0 gives customer 329 a haircut
+customer 331 arrives
+customer 331 takes a set in the waiting room
+barber 1 finishes customer 330's haircut
+customer 330 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 330
+customer 330 leaves satisfied
+barber 1 calls customer 331
+customer 331 sits in barber 1's chair
+barber 1 gives customer 331 a haircut
+customer 332 arrives
+customer 332 takes a set in the waiting room
+customer 333 arrives
+customer 333 leaves without getting haircut
+barber 0 finishes customer 331's haircut
+customer 331 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 331
+customer 331 leaves satisfied
+barber 0 calls customer 333
+customer 333 sits in barber 0's chair
+barber 0 gives customer 333 a haircut
+customer 334 arrives
+customer 334 takes a set in the waiting room
+customer 335 arrives
+customer 335 leaves without getting haircut
+barber 1 finishes customer 335's haircut
+customer 335 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 335
+customer 335 leaves satisfied
+barber 1 calls customer 335
+customer 335 sits in barber 1's chair
+barber 1 gives customer 335 a haircut
+customer 336 arrives
+customer 336 takes a set in the waiting room
+barber 0 finishes customer 333's haircut
+customer 333 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 333
+customer 333 leaves satisfied
+barber 0 calls customer 333
+customer 333 sits in barber 0's chair
+barber 0 gives customer 333 a haircut
+customer 337 arrives
+customer 337 takes a set in the waiting room
+barber 1 finishes customer 337's haircut
+customer 337 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 337
+customer 337 leaves satisfied
+barber 1 calls customer 334
+customer 334 sits in barber 1's chair
+barber 1 gives customer 334 a haircut
+customer 338 arrives
+customer 338 takes a set in the waiting room
+customer 339 arrives
+customer 339 leaves without getting haircut
+barber 0 finishes customer 333's haircut
+customer 333 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 333
+customer 333 leaves satisfied
+barber 0 calls customer 339
+customer 339 sits in barber 0's chair
+barber 0 gives customer 339 a haircut
+customer 340 arrives
+customer 340 takes a set in the waiting room
+customer 341 arrives
+customer 341 leaves without getting haircut
+barber 1 finishes customer 341's haircut
+customer 341 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 341
+customer 341 leaves satisfied
+barber 1 calls customer 339
+customer 339 sits in barber 1's chair
+barber 1 gives customer 339 a haircut
+customer 342 arrives
+customer 342 takes a set in the waiting room
+customer 343 arrives
+customer 343 leaves without getting haircut
+barber 0 finishes customer 339's haircut
+customer 339 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 339
+customer 339 leaves satisfied
+barber 0 calls customer 339
+customer 339 sits in barber 0's chair
+barber 0 gives customer 339 a haircut
+customer 344 arrives
+customer 344 takes a set in the waiting room
+barber 1 finishes customer 339's haircut
+customer 339 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 339
+customer 339 leaves satisfied
+barber 1 calls customer 344
+customer 344 sits in barber 1's chair
+barber 1 gives customer 344 a haircut
+customer 345 arrives
+customer 345 takes a set in the waiting room
+customer 346 arrives
+customer 346 leaves without getting haircut
+barber 1 finishes customer 346's haircut
+customer 346 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 346
+customer 346 leaves satisfied
+barber 1 calls customer 346
+customer 346 sits in barber 1's chair
+barber 1 gives customer 346 a haircut
+barber 0 finishes customer 339's haircut
+customer 339 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 339
+customer 339 leaves satisfied
+barber 0 calls customer 346
+customer 346 sits in barber 0's chair
+barber 0 gives customer 346 a haircut
+customer 347 arrives
+customer 347 takes a set in the waiting room
+customer 348 arrives
+customer 348 takes a set in the waiting room
+customer 349 arrives
+customer 349 leaves without getting haircut
+barber 0 finishes customer 348's haircut
+customer 348 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 348
+customer 348 leaves satisfied
+barber 0 calls customer 348
+customer 348 sits in barber 0's chair
+barber 0 gives customer 348 a haircut
+customer 350 arrives
+customer 350 takes a set in the waiting room
+barber 1 finishes customer 350's haircut
+customer 350 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 350
+customer 350 leaves satisfied
+barber 1 calls customer 347
+customer 347 sits in barber 1's chair
+barber 1 gives customer 347 a haircut
+customer 351 arrives
+customer 351 takes a set in the waiting room
+customer 352 arrives
+customer 352 leaves without getting haircut
+barber 0 finishes customer 352's haircut
+customer 352 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 352
+customer 352 leaves satisfied
+barber 0 calls customer 352
+customer 352 sits in barber 0's chair
+barber 0 gives customer 352 a haircut
+customer 353 arrives
+customer 353 takes a set in the waiting room
+barber 1 finishes customer 353's haircut
+customer 353 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 353
+customer 353 leaves satisfied
+barber 1 calls customer 352
+customer 352 sits in barber 1's chair
+barber 1 gives customer 352 a haircut
+customer 354 arrives
+customer 354 takes a set in the waiting room
+customer 355 arrives
+customer 355 leaves without getting haircut
+barber 0 finishes customer 354's haircut
+customer 354 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 354
+customer 354 leaves satisfied
+barber 0 calls customer 354
+customer 354 sits in barber 0's chair
+barber 0 gives customer 354 a haircut
+barber 1 finishes customer 354's haircut
+customer 354 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 354
+customer 354 leaves satisfied
+barber 1 calls customer 355
+customer 355 sits in barber 1's chair
+barber 1 gives customer 355 a haircut
+customer 356 arrives
+customer 356 takes a set in the waiting room
+customer 357 arrives
+customer 357 takes a set in the waiting room
+customer 358 arrives
+customer 358 leaves without getting haircut
+barber 0 finishes customer 357's haircut
+customer 357 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 357
+customer 357 leaves satisfied
+barber 0 calls customer 357
+customer 357 sits in barber 0's chair
+barber 0 gives customer 357 a haircut
+customer 359 arrives
+customer 359 takes a set in the waiting room
+barber 1 finishes customer 359's haircut
+customer 359 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 359
+customer 359 leaves satisfied
+barber 1 calls customer 357
+customer 357 sits in barber 1's chair
+barber 1 gives customer 357 a haircut
+customer 360 arrives
+customer 360 takes a set in the waiting room
+customer 361 arrives
+customer 361 leaves without getting haircut
+barber 0 finishes customer 361's haircut
+customer 361 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 361
+customer 361 leaves satisfied
+barber 0 calls customer 361
+customer 361 sits in barber 0's chair
+barber 0 gives customer 361 a haircut
+customer 362 arrives
+customer 362 takes a set in the waiting room
+barber 1 finishes customer 361's haircut
+customer 361 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 361
+customer 361 leaves satisfied
+barber 1 calls customer 362
+customer 362 sits in barber 1's chair
+barber 1 gives customer 362 a haircut
+customer 363 arrives
+customer 363 takes a set in the waiting room
+customer 364 arrives
+customer 364 leaves without getting haircut
+customer 365 arrives
+customer 365 leaves without getting haircut
+barber 0 finishes customer 361's haircut
+customer 361 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 361
+customer 361 leaves satisfied
+barber 0 calls customer 361
+customer 361 sits in barber 0's chair
+barber 0 gives customer 361 a haircut
+barber 1 finishes customer 365's haircut
+customer 365 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 365
+customer 365 leaves satisfied
+barber 1 calls customer 365
+customer 365 sits in barber 1's chair
+barber 1 gives customer 365 a haircut
+customer 366 arrives
+customer 366 takes a set in the waiting room
+customer 367 arrives
+customer 367 takes a set in the waiting room
+barber 1 finishes customer 366's haircut
+customer 366 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 366
+customer 366 leaves satisfied
+barber 1 calls customer 366
+customer 366 sits in barber 1's chair
+barber 1 gives customer 366 a haircut
+customer 368 arrives
+customer 368 takes a set in the waiting room
+barber 0 finishes customer 368's haircut
+customer 368 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 368
+customer 368 leaves satisfied
+barber 0 calls customer 366
+customer 366 sits in barber 0's chair
+barber 0 gives customer 366 a haircut
+customer 369 arrives
+customer 369 takes a set in the waiting room
+customer 370 arrives
+customer 370 leaves without getting haircut
+barber 1 finishes customer 370's haircut
+customer 370 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 370
+customer 370 leaves satisfied
+barber 1 calls customer 368
+customer 368 sits in barber 1's chair
+barber 1 gives customer 368 a haircut
+customer 371 arrives
+customer 371 takes a set in the waiting room
+barber 0 finishes customer 371's haircut
+customer 371 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 371
+customer 371 leaves satisfied
+barber 0 calls customer 368
+customer 368 sits in barber 0's chair
+barber 0 gives customer 368 a haircut
+customer 372 arrives
+customer 372 takes a set in the waiting room
+customer 373 arrives
+customer 373 leaves without getting haircut
+barber 1 finishes customer 372's haircut
+customer 372 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 372
+customer 372 leaves satisfied
+barber 1 calls customer 373
+customer 373 sits in barber 1's chair
+barber 1 gives customer 373 a haircut
+customer 374 arrives
+customer 374 takes a set in the waiting room
+barber 0 finishes customer 374's haircut
+customer 374 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 374
+customer 374 leaves satisfied
+barber 0 calls customer 373
+customer 373 sits in barber 0's chair
+barber 0 gives customer 373 a haircut
+customer 375 arrives
+customer 375 takes a set in the waiting room
+customer 376 arrives
+customer 376 leaves without getting haircut
+barber 0 finishes customer 373's haircut
+customer 373 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 373
+customer 373 leaves satisfied
+barber 0 calls customer 375
+customer 375 sits in barber 0's chair
+barber 0 gives customer 375 a haircut
+barber 1 finishes customer 373's haircut
+customer 373 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 373
+customer 373 leaves satisfied
+barber 1 calls customer 375
+customer 375 sits in barber 1's chair
+barber 1 gives customer 375 a haircut
+customer 377 arrives
+customer 377 takes a set in the waiting room
+customer 378 arrives
+customer 378 takes a set in the waiting room
+customer 379 arrives
+customer 379 leaves without getting haircut
+barber 0 finishes customer 379's haircut
+customer 379 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 379
+customer 379 leaves satisfied
+barber 0 calls customer 379
+customer 379 sits in barber 0's chair
+barber 0 gives customer 379 a haircut
+customer 380 arrives
+customer 380 takes a set in the waiting room
+barber 1 finishes customer 379's haircut
+customer 379 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 379
+customer 379 leaves satisfied
+barber 1 calls customer 380
+customer 380 sits in barber 1's chair
+barber 1 gives customer 380 a haircut
+customer 381 arrives
+customer 381 takes a set in the waiting room
+customer 382 arrives
+customer 382 leaves without getting haircut
+customer 383 arrives
+customer 383 leaves without getting haircut
+barber 0 finishes customer 383's haircut
+customer 383 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 383
+customer 383 leaves satisfied
+barber 0 calls customer 381
+customer 381 sits in barber 0's chair
+barber 0 gives customer 381 a haircut
+barber 1 finishes customer 381's haircut
+customer 381 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 381
+customer 381 leaves satisfied
+barber 1 calls customer 381
+customer 381 sits in barber 1's chair
+barber 1 gives customer 381 a haircut
+customer 384 arrives
+customer 384 takes a set in the waiting room
+customer 385 arrives
+customer 385 takes a set in the waiting room
+barber 0 finishes customer 385's haircut
+customer 385 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 385
+customer 385 leaves satisfied
+barber 0 calls customer 385
+customer 385 sits in barber 0's chair
+barber 0 gives customer 385 a haircut
+customer 386 arrives
+customer 386 takes a set in the waiting room
+barber 1 finishes customer 386's haircut
+customer 386 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 386
+customer 386 leaves satisfied
+barber 1 calls customer 386
+customer 386 sits in barber 1's chair
+barber 1 gives customer 386 a haircut
+customer 387 arrives
+customer 387 takes a set in the waiting room
+customer 388 arrives
+customer 388 leaves without getting haircut
+barber 0 finishes customer 388's haircut
+customer 388 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 388
+customer 388 leaves satisfied
+barber 0 calls customer 388
+customer 388 sits in barber 0's chair
+barber 0 gives customer 388 a haircut
+barber 1 finishes customer 388's haircut
+customer 388 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 388
+customer 388 leaves satisfied
+barber 1 calls customer 388
+customer 388 sits in barber 1's chair
+barber 1 gives customer 388 a haircut
+customer 389 arrives
+customer 389 takes a set in the waiting room
+customer 390 arrives
+customer 390 takes a set in the waiting room
+customer 391 arrives
+customer 391 leaves without getting haircut
+barber 0 finishes customer 391's haircut
+customer 391 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 391
+customer 391 leaves satisfied
+barber 0 calls customer 391
+customer 391 sits in barber 0's chair
+barber 0 gives customer 391 a haircut
+barber 1 finishes customer 391's haircut
+customer 391 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 391
+customer 391 leaves satisfied
+barber 1 calls customer 391
+customer 391 sits in barber 1's chair
+barber 1 gives customer 391 a haircut
+customer 392 arrives
+customer 392 takes a set in the waiting room
+customer 393 arrives
+customer 393 takes a set in the waiting room
+customer 394 arrives
+customer 394 leaves without getting haircut
+barber 1 finishes customer 394's haircut
+customer 394 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 394
+customer 394 leaves satisfied
+barber 1 calls customer 394
+customer 394 sits in barber 1's chair
+barber 1 gives customer 394 a haircut
+barber 0 finishes customer 394's haircut
+customer 394 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 394
+customer 394 leaves satisfied
+barber 0 calls customer 392
+customer 392 sits in barber 0's chair
+barber 0 gives customer 392 a haircut
+customer 395 arrives
+customer 395 takes a set in the waiting room
+customer 396 arrives
+customer 396 takes a set in the waiting room
+customer 397 arrives
+customer 397 leaves without getting haircut
+barber 1 finishes customer 397's haircut
+customer 397 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 397
+customer 397 leaves satisfied
+barber 1 calls customer 397
+customer 397 sits in barber 1's chair
+barber 1 gives customer 397 a haircut
+customer 398 arrives
+customer 398 takes a set in the waiting room
+barber 0 finishes customer 392's haircut
+customer 392 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 392
+customer 392 leaves satisfied
+barber 0 calls customer 397
+customer 397 sits in barber 0's chair
+barber 0 gives customer 397 a haircut
+customer 399 arrives
+customer 399 takes a set in the waiting room
+customer 400 arrives
+customer 400 leaves without getting haircut
+customer 401 arrives
+customer 401 leaves without getting haircut
+barber 1 finishes customer 399's haircut
+customer 399 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 399
+customer 399 leaves satisfied
+barber 1 calls customer 399
+customer 399 sits in barber 1's chair
+barber 1 gives customer 399 a haircut
+barber 0 finishes customer 399's haircut
+customer 399 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 399
+customer 399 leaves satisfied
+barber 0 calls customer 401
+customer 401 sits in barber 0's chair
+barber 0 gives customer 401 a haircut
+customer 402 arrives
+customer 402 takes a set in the waiting room
+customer 403 arrives
+customer 403 takes a set in the waiting room
+barber 1 finishes customer 399's haircut
+customer 399 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 399
+customer 399 leaves satisfied
+barber 1 calls customer 399
+customer 399 sits in barber 1's chair
+barber 1 gives customer 399 a haircut
+customer 404 arrives
+customer 404 takes a set in the waiting room
+barber 0 finishes customer 402's haircut
+customer 402 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 402
+customer 402 leaves satisfied
+barber 0 calls customer 402
+customer 402 sits in barber 0's chair
+barber 0 gives customer 402 a haircut
+customer 405 arrives
+customer 405 takes a set in the waiting room
+customer 406 arrives
+customer 406 leaves without getting haircut
+customer 407 arrives
+customer 407 leaves without getting haircut
+barber 0 finishes customer 406's haircut
+customer 406 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 406
+customer 406 leaves satisfied
+barber 0 calls customer 403
+customer 403 sits in barber 0's chair
+barber 0 gives customer 403 a haircut
+barber 1 finishes customer 407's haircut
+customer 407 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 407
+customer 407 leaves satisfied
+barber 1 calls customer 407
+customer 407 sits in barber 1's chair
+barber 1 gives customer 407 a haircut
+customer 408 arrives
+customer 408 takes a set in the waiting room
+customer 409 arrives
+customer 409 takes a set in the waiting room
+customer 410 arrives
+customer 410 leaves without getting haircut
+barber 1 finishes customer 408's haircut
+customer 408 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 408
+customer 408 leaves satisfied
+barber 1 calls customer 408
+customer 408 sits in barber 1's chair
+barber 1 gives customer 408 a haircut
+barber 0 finishes customer 410's haircut
+customer 410 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 410
+customer 410 leaves satisfied
+barber 0 calls customer 408
+customer 408 sits in barber 0's chair
+barber 0 gives customer 408 a haircut
+customer 411 arrives
+customer 411 takes a set in the waiting room
+customer 412 arrives
+customer 412 takes a set in the waiting room
+barber 1 finishes customer 411's haircut
+customer 411 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 411
+customer 411 leaves satisfied
+barber 1 calls customer 412
+customer 412 sits in barber 1's chair
+barber 1 gives customer 412 a haircut
+customer 413 arrives
+customer 413 takes a set in the waiting room
+barber 0 finishes customer 411's haircut
+customer 411 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 411
+customer 411 leaves satisfied
+barber 0 calls customer 411
+customer 411 sits in barber 0's chair
+barber 0 gives customer 411 a haircut
+customer 414 arrives
+customer 414 takes a set in the waiting room
+customer 415 arrives
+customer 415 leaves without getting haircut
+barber 0 finishes customer 411's haircut
+customer 411 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 411
+customer 411 leaves satisfied
+barber 0 calls customer 415
+customer 415 sits in barber 0's chair
+barber 0 gives customer 415 a haircut
+barber 1 finishes customer 415's haircut
+customer 415 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 415
+customer 415 leaves satisfied
+barber 1 calls customer 415
+customer 415 sits in barber 1's chair
+barber 1 gives customer 415 a haircut
+customer 416 arrives
+customer 416 takes a set in the waiting room
+customer 417 arrives
+customer 417 takes a set in the waiting room
+customer 418 arrives
+customer 418 leaves without getting haircut
+barber 0 finishes customer 415's haircut
+customer 415 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 415
+customer 415 leaves satisfied
+barber 0 calls customer 415
+customer 415 sits in barber 0's chair
+barber 0 gives customer 415 a haircut
+barber 1 finishes customer 415's haircut
+customer 415 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 415
+customer 415 leaves satisfied
+barber 1 calls customer 418
+customer 418 sits in barber 1's chair
+barber 1 gives customer 418 a haircut
+customer 419 arrives
+customer 419 takes a set in the waiting room
+customer 420 arrives
+customer 420 takes a set in the waiting room
+barber 0 finishes customer 420's haircut
+customer 420 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 420
+customer 420 leaves satisfied
+barber 0 calls customer 418
+customer 418 sits in barber 0's chair
+barber 0 gives customer 418 a haircut
+customer 421 arrives
+customer 421 takes a set in the waiting room
+barber 1 finishes customer 421's haircut
+customer 421 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 421
+customer 421 leaves satisfied
+barber 1 calls customer 420
+customer 420 sits in barber 1's chair
+barber 1 gives customer 420 a haircut
+customer 422 arrives
+customer 422 takes a set in the waiting room
+customer 423 arrives
+customer 423 leaves without getting haircut
+barber 0 finishes customer 421's haircut
+customer 421 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 421
+customer 421 leaves satisfied
+barber 0 calls customer 423
+customer 423 sits in barber 0's chair
+barber 0 gives customer 423 a haircut
+customer 424 arrives
+customer 424 takes a set in the waiting room
+barber 1 finishes customer 423's haircut
+customer 423 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 423
+customer 423 leaves satisfied
+barber 1 calls customer 424
+customer 424 sits in barber 1's chair
+barber 1 gives customer 424 a haircut
+customer 425 arrives
+customer 425 takes a set in the waiting room
+customer 426 arrives
+customer 426 leaves without getting haircut
+customer 427 arrives
+customer 427 leaves without getting haircut
+barber 0 finishes customer 423's haircut
+customer 423 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 423
+customer 423 leaves satisfied
+barber 0 calls customer 423
+customer 423 sits in barber 0's chair
+barber 0 gives customer 423 a haircut
+barber 1 finishes customer 427's haircut
+customer 427 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 427
+customer 427 leaves satisfied
+barber 1 calls customer 427
+customer 427 sits in barber 1's chair
+barber 1 gives customer 427 a haircut
+customer 428 arrives
+customer 428 takes a set in the waiting room
+customer 429 arrives
+customer 429 takes a set in the waiting room
+customer 430 arrives
+customer 430 leaves without getting haircut
+barber 0 finishes customer 423's haircut
+customer 423 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 423
+customer 423 leaves satisfied
+barber 0 calls customer 430
+customer 430 sits in barber 0's chair
+barber 0 gives customer 430 a haircut
+barber 1 finishes customer 430's haircut
+customer 430 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 430
+customer 430 leaves satisfied
+barber 1 calls customer 430
+customer 430 sits in barber 1's chair
+barber 1 gives customer 430 a haircut
+customer 431 arrives
+customer 431 takes a set in the waiting room
+customer 432 arrives
+customer 432 takes a set in the waiting room
+customer 433 arrives
+customer 433 leaves without getting haircut
+barber 1 finishes customer 433's haircut
+customer 433 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 433
+customer 433 leaves satisfied
+barber 1 calls customer 433
+customer 433 sits in barber 1's chair
+barber 1 gives customer 433 a haircut
+customer 434 arrives
+customer 434 takes a set in the waiting room
+barber 0 finishes customer 434's haircut
+customer 434 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 434
+customer 434 leaves satisfied
+barber 0 calls customer 431
+customer 431 sits in barber 0's chair
+barber 0 gives customer 431 a haircut
+customer 435 arrives
+customer 435 takes a set in the waiting room
+customer 436 arrives
+customer 436 leaves without getting haircut
+barber 1 finishes customer 435's haircut
+customer 435 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 435
+customer 435 leaves satisfied
+barber 1 calls customer 435
+customer 435 sits in barber 1's chair
+barber 1 gives customer 435 a haircut
+customer 437 arrives
+customer 437 takes a set in the waiting room
+barber 0 finishes customer 436's haircut
+customer 436 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 436
+customer 436 leaves satisfied
+barber 0 calls customer 437
+customer 437 sits in barber 0's chair
+barber 0 gives customer 437 a haircut
+customer 438 arrives
+customer 438 takes a set in the waiting room
+customer 439 arrives
+customer 439 leaves without getting haircut
+barber 1 finishes customer 438's haircut
+customer 438 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 438
+customer 438 leaves satisfied
+barber 1 calls customer 438
+customer 438 sits in barber 1's chair
+barber 1 gives customer 438 a haircut
+customer 440 arrives
+customer 440 takes a set in the waiting room
+barber 0 finishes customer 438's haircut
+customer 438 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 438
+customer 438 leaves satisfied
+barber 0 calls customer 438
+customer 438 sits in barber 0's chair
+barber 0 gives customer 438 a haircut
+customer 441 arrives
+customer 441 takes a set in the waiting room
+customer 442 arrives
+customer 442 leaves without getting haircut
+barber 1 finishes customer 438's haircut
+customer 438 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 438
+customer 438 leaves satisfied
+barber 1 calls customer 438
+customer 438 sits in barber 1's chair
+barber 1 gives customer 438 a haircut
+customer 443 arrives
+customer 443 takes a set in the waiting room
+customer 444 arrives
+customer 444 leaves without getting haircut
+barber 0 finishes customer 438's haircut
+customer 438 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 438
+customer 438 leaves satisfied
+barber 0 calls customer 444
+customer 444 sits in barber 0's chair
+barber 0 gives customer 444 a haircut
+customer 445 arrives
+customer 445 takes a set in the waiting room
+barber 1 finishes customer 445's haircut
+customer 445 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 445
+customer 445 leaves satisfied
+barber 1 calls customer 444
+customer 444 sits in barber 1's chair
+barber 1 gives customer 444 a haircut
+customer 446 arrives
+customer 446 takes a set in the waiting room
+customer 447 arrives
+customer 447 leaves without getting haircut
+barber 0 finishes customer 446's haircut
+customer 446 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 446
+customer 446 leaves satisfied
+barber 0 calls customer 446
+customer 446 sits in barber 0's chair
+barber 0 gives customer 446 a haircut
+customer 448 arrives
+customer 448 takes a set in the waiting room
+barber 1 finishes customer 446's haircut
+customer 446 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 446
+customer 446 leaves satisfied
+barber 1 calls customer 448
+customer 448 sits in barber 1's chair
+barber 1 gives customer 448 a haircut
+customer 449 arrives
+customer 449 takes a set in the waiting room
+customer 450 arrives
+customer 450 leaves without getting haircut
+customer 451 arrives
+customer 451 leaves without getting haircut
+barber 0 finishes customer 446's haircut
+customer 446 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 446
+customer 446 leaves satisfied
+barber 0 calls customer 446
+customer 446 sits in barber 0's chair
+barber 0 gives customer 446 a haircut
+barber 1 finishes customer 451's haircut
+customer 451 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 451
+customer 451 leaves satisfied
+barber 1 calls customer 451
+customer 451 sits in barber 1's chair
+barber 1 gives customer 451 a haircut
+customer 452 arrives
+customer 452 takes a set in the waiting room
+customer 453 arrives
+customer 453 takes a set in the waiting room
+customer 454 arrives
+customer 454 leaves without getting haircut
+barber 0 finishes customer 446's haircut
+customer 446 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 446
+customer 446 leaves satisfied
+barber 0 calls customer 454
+customer 454 sits in barber 0's chair
+barber 0 gives customer 454 a haircut
+customer 455 arrives
+customer 455 takes a set in the waiting room
+barber customer 1 finishes customer 456455 arrives
+'s haircut
+customer customer 455 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 455
+customer 455 leaves satisfied
+456barber 1 calls customer 455
+customer 455 sits in barber 1's chair
+barber 1 gives customer 455 a haircut
+ leaves without getting haircut
+barber 0 finishes customer 455's haircut
+customer 455 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 455
+customer 455 leaves satisfied
+barber 0 calls customer 455
+customer 455 sits in barber 0's chair
+barber 0 gives customer 455 a haircut
+customer 457 arrives
+customer 457 takes a set in the waiting room
+customer 458 arrives
+customer 458 takes a set in the waiting room
+customer 459 arrives
+customer 459 leaves without getting haircut
+barber 1 finishes customer 455's haircut
+customer 455 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 455
+customer 455 leaves satisfied
+barber 1 calls customer 455
+customer 455 sits in barber 1's chair
+barber 1 gives customer 455 a haircut
+barber 0 finishes customer 455's haircut
+customer 455 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 455
+customer 455 leaves satisfied
+barber 0 calls customer 457
+customer 457 sits in barber 0's chair
+barber 0 gives customer 457 a haircut
+customer 460 arrives
+customer 460 takes a set in the waiting room
+customer 461 arrives
+customer 461 takes a set in the waiting room
+customer 462 arrives
+customer 462 leaves without getting haircut
+barber 0 finishes customer 457's haircut
+customer 457 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 457
+customer 457 leaves satisfied
+barber 0 calls customer 460
+customer 460 sits in barber 0's chair
+barber 0 gives customer 460 a haircut
+customer 463 arrives
+customer 463 takes a set in the waiting room
+barber 1 finishes customer 463's haircut
+customer 463 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 463
+customer 463 leaves satisfied
+barber 1 calls customer 460
+customer 460 sits in barber 1's chair
+barber 1 gives customer 460 a haircut
+customer 464 arrives
+customer 464 takes a set in the waiting room
+barber 0 finishes customer 460's haircut
+customer 460 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 460
+customer 460 leaves satisfied
+barber 0 calls customer 464
+customer 464 sits in barber 0's chair
+barber 0 gives customer 464 a haircut
+customer 465 arrives
+customer 465 takes a set in the waiting room
+customer 466 arrives
+customer 466 leaves without getting haircut
+barber 1 finishes customer 466's haircut
+customer 466 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 466
+customer 466 leaves satisfied
+barber 1 calls customer 464
+customer 464 sits in barber 1's chair
+barber 1 gives customer 464 a haircut
+customer 467 arrives
+customer 467 takes a set in the waiting room
+barber 0 finishes customer 467's haircut
+customer 467 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 467
+customer 467 leaves satisfied
+barber 0 calls customer 467
+customer 467 sits in barber 0's chair
+barber 0 gives customer 467 a haircut
+customer 468 arrives
+customer 468 takes a set in the waiting room
+customer 469 arrives
+customer 469 leaves without getting haircut
+barber 1 finishes customer 469's haircut
+customer 469 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 469
+customer 469 leaves satisfied
+barber 1 calls customer 466
+customer 466 sits in barber 1's chair
+barber 1 gives customer 466 a haircut
+customer 470 arrives
+customer 470 takes a set in the waiting room
+customer 471 arrives
+customer 471 leaves without getting haircut
+barber 0 finishes customer 471's haircut
+customer 471 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 471
+customer 471 leaves satisfied
+barber 0 calls customer 471
+customer 471 sits in barber 0's chair
+barber 0 gives customer 471 a haircut
+customer 472 arrives
+customer 472 takes a set in the waiting room
+barber 1 finishes customer 472's haircut
+customer 472 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 472
+customer 472 leaves satisfied
+barber 1 calls customer 471
+customer 471 sits in barber 1's chair
+barber 1 gives customer 471 a haircut
+customer 473 arrives
+customer 473 takes a set in the waiting room
+customer 474 arrives
+customer 474 leaves without getting haircut
+barber 0 finishes customer 471's haircut
+customer 471 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 471
+customer 471 leaves satisfied
+barber 0 calls customer 470
+customer 470 sits in barber 0's chair
+barber 0 gives customer 470 a haircut
+customer 475 arrives
+customer 475 takes a set in the waiting room
+barber 1 finishes customer 475's haircut
+customer 475 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 475
+customer 475 leaves satisfied
+barber 1 calls customer 474
+customer 474 sits in barber 1's chair
+barber 1 gives customer 474 a haircut
+customer 476 arrives
+customer 476 takes a set in the waiting room
+customer 477 arrives
+customer 477 leaves without getting haircut
+barber 0 finishes customer 470's haircut
+customer 470 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 470
+customer 470 leaves satisfied
+barber 0 calls customer 474
+customer 474 sits in barber 0's chair
+barber 0 gives customer 474 a haircut
+customer 478 arrives
+customer 478 takes a set in the waiting room
+customer 479 arrives
+customer 479 leaves without getting haircut
+barber 1 finishes customer 479's haircut
+customer 479 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 479
+customer 479 leaves satisfied
+barber 1 calls customer 477
+customer 477 sits in barber 1's chair
+barber 1 gives customer 477 a haircut
+customer 480 arrives
+customer 480 takes a set in the waiting room
+barber 0 finishes customer 480's haircut
+customer 480 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 480
+customer 480 leaves satisfied
+barber 0 calls customer 477
+customer 477 sits in barber 0's chair
+barber 0 gives customer 477 a haircut
+customer 481 arrives
+customer 481 takes a set in the waiting room
+customer 482 arrives
+customer 482 leaves without getting haircut
+barber 1 finishes customer 477's haircut
+customer 477 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 477
+customer 477 leaves satisfied
+barber 1 calls customer 482
+customer 482 sits in barber 1's chair
+barber 1 gives customer 482 a haircut
+customer 483 arrives
+barber 0 finishes customer 477's haircut
+customer customer 477483 takes a set in the waiting room
+ gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 477
+customer 477 leaves satisfied
+barber 0 calls customer 483
+customer 483 sits in barber 0's chair
+barber 0 gives customer 483 a haircut
+customer 484 arrives
+customer 484 takes a set in the waiting room
+customer 485 arrives
+customer 485 leaves without getting haircut
+barber 1 finishes customer 483's haircut
+customer 483 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 483
+customer 483 leaves satisfied
+barber 1 calls customer 483
+customer 483 sits in barber 1's chair
+barber 1 gives customer 483 a haircut
+barber 0 finishes customer 483's haircut
+customer 483 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 483
+customer 483 leaves satisfied
+barber 0 calls customer 483
+customer 483 sits in barber 0's chair
+barber 0 gives customer 483 a haircut
+customer 486 arrives
+customer 486 takes a set in the waiting room
+customer 487 arrives
+customer 487 takes a set in the waiting room
+customer 488 arrives
+customer 488 leaves without getting haircut
+barber 1 finishes customer 488's haircut
+customer 488 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 488
+customer 488 leaves satisfied
+barber 1 calls customer 485
+customer 485 sits in barber 1's chair
+barber 1 gives customer 485 a haircut
+customer 489 arrives
+customer 489 takes a set in the waiting room
+barber 0 finishes customer 489's haircut
+customer 489 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 489
+customer 489 leaves satisfied
+barber 0 calls customer 489
+customer 489 sits in barber 0's chair
+barber 0 gives customer 489 a haircut
+customer 490 arrives
+customer 490 takes a set in the waiting room
+customer 491 arrives
+customer 491 leaves without getting haircut
+customer 492 arrives
+customer 492 leaves without getting haircut
+barber 1 finishes customer 491's haircut
+customer 491 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 491
+customer 491 leaves satisfied
+barber 1 calls customer 492
+customer 492 sits in barber 1's chair
+barber 1 gives customer 492 a haircut
+barber 0 finishes customer 492's haircut
+customer 492 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 492
+customer 492 leaves satisfied
+barber 0 calls customer 492
+customer 492 sits in barber 0's chair
+barber 0 gives customer 492 a haircut
+customer 493 arrives
+customer 493 takes a set in the waiting room
+customer 494 arrives
+customer 494 takes a set in the waiting room
+barber 1 finishes customer 494's haircut
+customer 494 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 494
+customer 494 leaves satisfied
+barber 1 calls customer 491
+customer 491 sits in barber 1's chair
+barber 1 gives customer 491 a haircut
+customer 495 arrives
+customer 495 takes a set in the waiting room
+barber 0 finishes customer 494's haircut
+customer 494 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 494
+customer 494 leaves satisfied
+barber 0 calls customer 494
+customer 494 sits in barber 0's chair
+barber 0 gives customer 494 a haircut
+customer 496 arrives
+customer 496 takes a set in the waiting room
+customer 497 arrives
+customer 497 leaves without getting haircut
+barber 1 finishes customer 495's haircut
+customer 495 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 495
+customer 495 leaves satisfied
+barber 1 calls customer 497
+customer 497 sits in barber 1's chair
+barber 1 gives customer 497 a haircut
+customer 498 arrives
+customer 498 takes a set in the waiting room
+barber 0 finishes customer 498's haircut
+customer 498 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 498
+customer 498 leaves satisfied
+barber 0 calls customer 495
+customer 495 sits in barber 0's chair
+barber 0 gives customer 495 a haircut
+customer 499 arrives
+customer 499 takes a set in the waiting room
+barber 1 finishes customer 499's haircut
+customer 499 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 499
+customer 499 leaves satisfied
+barber 1 calls customer 499
+customer 499 sits in barber 1's chair
+barber 1 gives customer 499 a haircut
+customer 500 arrives
+customer 500 takes a set in the waiting room
+customer 501 arrives
+customer 501 leaves without getting haircut
+barber 0 finishes customer 501's haircut
+customer 501 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 501
+customer 501 leaves satisfied
+barber 0 calls customer 500
+customer 500 sits in barber 0's chair
+barber 0 gives customer 500 a haircut
+customer 502 arrives
+customer 502 takes a set in the waiting room
+barber 1 finishes customer 502's haircut
+customer 502 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 502
+customer 502 leaves satisfied
+barber 1 calls customer 502
+customer 502 sits in barber 1's chair
+barber 1 gives customer 502 a haircut
+customer 503 arrives
+customer 503 takes a set in the waiting room
+customer 504 arrives
+customer 504 leaves without getting haircut
+barber 0 finishes customer 504's haircut
+customer 504 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 504
+customer 504 leaves satisfied
+barber 0 calls customer 504
+customer 504 sits in barber 0's chair
+barber 0 gives customer 504 a haircut
+barber 1 finishes customer 504's haircut
+customer 504 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 504
+customer 504 leaves satisfied
+barber 1 calls customer 504
+customer 504 sits in barber 1's chair
+barber 1 gives customer 504 a haircut
+customer 505 arrives
+customer 505 takes a set in the waiting room
+customer 506 arrives
+customer 506 takes a set in the waiting room
+customer 507 arrives
+customer 507 leaves without getting haircut
+barber 0 finishes customer 507's haircut
+customer 507 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 507
+customer 507 leaves satisfied
+barber 0 calls customer 507
+customer 507 sits in barber 0's chair
+barber 0 gives customer 507 a haircut
+customer 508 arrives
+customer 508 takes a set in the waiting room
+barber 1 finishes customer 507's haircut
+customer 507 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 507
+customer 507 leaves satisfied
+barber 1 calls customer 507
+customer 507 sits in barber 1's chair
+barber 1 gives customer 507 a haircut
+customer 509 arrives
+customer 509 takes a set in the waiting room
+customer 510 arrives
+customer 510 leaves without getting haircut
+barber 0 finishes customer 507's haircut
+customer 507 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 507
+customer 507 leaves satisfied
+barber 0 calls customer 510
+customer 510 sits in barber 0's chair
+barber 0 gives customer 510 a haircut
+customer 511 arrives
+customer 511 takes a set in the waiting room
+barber 1 finishes customer 511's haircut
+customer 511 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 511
+customer 511 leaves satisfied
+barber 1 calls customer 510
+customer 510 sits in barber 1's chair
+barber 1 gives customer 510 a haircut
+customer 512 arrives
+customer 512 takes a set in the waiting room
+customer 513 arrives
+customer 513 leaves without getting haircut
+barber 0 finishes customer 513's haircut
+customer 513 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 513
+customer 513 leaves satisfied
+barber 0 calls customer 513
+customer 513 sits in barber 0's chair
+barber 0 gives customer 513 a haircut
+barber 1 finishes customer 513's haircut
+customer 513 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 513
+customer 513 leaves satisfied
+barber 1 calls customer 512
+customer 512 sits in barber 1's chair
+barber 1 gives customer 512 a haircut
+customer 514 arrives
+customer 514 takes a set in the waiting room
+customer 515 arrives
+customer 515 takes a set in the waiting room
+customer 516 arrives
+customer 516 leaves without getting haircut
+barber 0 finishes customer 516's haircut
+customer 516 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 516
+customer 516 leaves satisfied
+barber 0 calls customer 514
+customer 514 sits in barber 0's chair
+barber 0 gives customer 514 a haircut
+customer 517 arrives
+customer 517 takes a set in the waiting room
+barber 1 finishes customer 517's haircut
+customer 517 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 517
+customer 517 leaves satisfied
+barber 1 calls customer 517
+customer 517 sits in barber 1's chair
+barber 1 gives customer 517 a haircut
+customer 518 arrives
+customer 518 takes a set in the waiting room
+customer 519 arrives
+customer 519 leaves without getting haircut
+barber 0 finishes customer 517's haircut
+customer 517 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 517
+customer 517 leaves satisfied
+barber 0 calls customer 515
+customer 515 sits in barber 0's chair
+barber 0 gives customer 515 a haircut
+customer 520 arrives
+customer 520 takes a set in the waiting room
+customer 521 arrives
+customer 521 leaves without getting haircut
+barber 1 finishes customer 517's haircut
+customer 517 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 517
+customer 517 leaves satisfied
+barber 1 calls customer 517
+customer 517 sits in barber 1's chair
+barber 1 gives customer 517 a haircut
+customer 522 arrives
+customer 522 takes a set in the waiting room
+barber 0 finishes customer 515's haircut
+customer 515 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 515
+customer 515 leaves satisfied
+barber 0 calls customer 521
+customer 521 sits in barber 0's chair
+barber 0 gives customer 521 a haircut
+customer 523 arrives
+customer 523 takes a set in the waiting room
+customer 524 arrives
+customer 524 leaves without getting haircut
+barber 1 finishes customer 524's haircut
+customer 524 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 524
+customer 524 leaves satisfied
+barber 1 calls customer 521
+customer 521 sits in barber 1's chair
+barber 1 gives customer 521 a haircut
+customer 525 arrives
+customer 525 takes a set in the waiting room
+barber 0 finishes customer 525's haircut
+customer 525 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 525
+customer 525 leaves satisfied
+barber 0 calls customer 524
+customer 524 sits in barber 0's chair
+barber 0 gives customer 524 a haircut
+customer 526 arrives
+customer 526 takes a set in the waiting room
+customer 527 arrives
+customer 527 leaves without getting haircut
+barber 1 finishes customer 527's haircut
+customer 527 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 527
+customer 527 leaves satisfied
+barber 1 calls customer 524
+customer 524 sits in barber 1's chair
+barber 1 gives customer 524 a haircut
+customer 528 arrives
+customer 528 takes a set in the waiting room
+barber 0 finishes customer 528's haircut
+customer 528 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 528
+customer 528 leaves satisfied
+barber 0 calls customer 527
+customer 527 sits in barber 0's chair
+barber 0 gives customer 527 a haircut
+customer 529 arrives
+customer 529 takes a set in the waiting room
+customer 530 arrives
+customer 530 leaves without getting haircut
+barber 1 finishes customer 530's haircut
+customer 530 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 530
+customer 530 leaves satisfied
+barber 1 calls customer 527
+customer 527 sits in barber 1's chair
+barber 1 gives customer 527 a haircut
+customer 531 arrives
+customer 531 takes a set in the waiting room
+barber 0 finishes customer 531's haircut
+customer 531 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 531
+customer 531 leaves satisfied
+barber 0 calls customer 530
+customer 530 sits in barber 0's chair
+barber 0 gives customer 530 a haircut
+customer 532 arrives
+customer 532 takes a set in the waiting room
+customer 533 arrives
+customer 533 leaves without getting haircut
+barber 0 finishes customer 530's haircut
+customer 530 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 530
+customer 530 leaves satisfied
+barber 0 calls customer 530
+customer 530 sits in barber 0's chair
+barber 0 gives customer 530 a haircut
+customer 534 arrives
+customer 534 takes a set in the waiting room
+barber 1 finishes customer 534's haircut
+customer 534 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 534
+customer 534 leaves satisfied
+barber 1 calls customer 534
+customer 534 sits in barber 1's chair
+barber 1 gives customer 534 a haircut
+customer 535 arrives
+customer 535 takes a set in the waiting room
+customer 536 arrives
+customer 536 leaves without getting haircut
+barber 0 finishes customer 536's haircut
+customer 536 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 536
+customer 536 leaves satisfied
+barber 0 calls customer 534
+customer 534 sits in barber 0's chair
+barber 0 gives customer 534 a haircut
+customer 537 arrives
+customer 537 takes a set in the waiting room
+barber 1 finishes customer 537's haircut
+customer 537 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 537
+customer 537 leaves satisfied
+barber 1 calls customer 537
+customer 537 sits in barber 1's chair
+barber 1 gives customer 537 a haircut
+customer 538 arrives
+customer 538 takes a set in the waiting room
+customer 539 arrives
+customer 539 leaves without getting haircut
+barber 0 finishes customer 539's haircut
+customer 539 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 539
+customer 539 leaves satisfied
+barber 0 calls customer 536
+customer 536 sits in barber 0's chair
+barber 0 gives customer 536 a haircut
+customer 540 arrives
+customer 540 takes a set in the waiting room
+barber 1 finishes customer 539's haircut
+customer 539 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 539
+customer 539 leaves satisfied
+barber 1 calls customer 539
+customer 539 sits in barber 1's chair
+barber 1 gives customer 539 a haircut
+customer 541 arrives
+customer 541 takes a set in the waiting room
+customer 542 arrives
+customer 542 leaves without getting haircut
+barber 0 finishes customer 540's haircut
+customer 540 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 540
+customer 540 leaves satisfied
+barber 0 calls customer 542
+customer 542 sits in barber 0's chair
+barber 0 gives customer 542 a haircut
+customer 543 arrives
+customer 543 takes a set in the waiting room
+customer 544 arrives
+customer 544 leaves without getting haircut
+barber 1 finishes customer 542's haircut
+customer 542 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 542
+customer 542 leaves satisfied
+barber 1 calls customer 544
+customer 544 sits in barber 1's chair
+barber 1 gives customer 544 a haircut
+customer 545 arrives
+customer 545 takes a set in the waiting room
+barber 0 finishes customer 545's haircut
+customer 545 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 545
+customer 545 leaves satisfied
+barber 0 calls customer 545
+customer 545 sits in barber 0's chair
+barber 0 gives customer 545 a haircut
+customer 546 arrives
+customer 546 takes a set in the waiting room
+barber 1 finishes customer 546's haircut
+customer 546 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 546
+customer 546 leaves satisfied
+barber 1 calls customer 546
+customer 546 sits in barber 1's chair
+barber 1 gives customer 546 a haircut
+customer 547 arrives
+customer 547 takes a set in the waiting room
+customer 548 arrives
+customer 548 leaves without getting haircut
+barber 0 finishes customer 548's haircut
+customer 548 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 548
+customer 548 leaves satisfied
+barber 0 calls customer 548
+customer 548 sits in barber 0's chair
+barber 0 gives customer 548 a haircut
+customer 549 arrives
+customer 549 takes a set in the waiting room
+barber 1 finishes customer 549's haircut
+customer 549 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 549
+customer 549 leaves satisfied
+barber 1 calls customer 549
+customer 549 sits in barber 1's chair
+barber 1 gives customer 549 a haircut
+customer 550 arrives
+customer 550 takes a set in the waiting room
+customer 551 arrives
+customer 551 leaves without getting haircut
+barber 0 finishes customer 550's haircut
+customer 550 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 550
+customer 550 leaves satisfied
+barber 0 calls customer 551
+customer 551 sits in barber 0's chair
+barber 0 gives customer 551 a haircut
+customer 552 arrives
+customer 552 takes a set in the waiting room
+barber 1 finishes customer 552's haircut
+customer 552 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 552
+customer 552 leaves satisfied
+barber 1 calls customer 552
+customer 552 sits in barber 1's chair
+barber 1 gives customer 552 a haircut
+customer 553 arrives
+customer 553 takes a set in the waiting room
+customer 554 arrives
+customer 554 leaves without getting haircut
+barber 0 finishes customer 554's haircut
+customer 554 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 554
+customer 554 leaves satisfied
+barber 0 calls customer 550
+customer 550 sits in barber 0's chair
+barber 0 gives customer 550 a haircut
+customer 555 arrives
+customer 555 takes a set in the waiting room
+barber 1 finishes customer 554's haircut
+customer 554 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 554
+customer 554 leaves satisfied
+barber 1 calls customer 554
+customer 554 sits in barber 1's chair
+barber 1 gives customer 554 a haircut
+customer 556 arrives
+customer 556 takes a set in the waiting room
+customer 557 arrives
+customer 557 leaves without getting haircut
+customer 558 arrives
+customer 558 leaves without getting haircut
+barber 1 finishes customer 557's haircut
+customer 557 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 557
+customer 557 leaves satisfied
+barber 1 calls customer 557
+customer 557 sits in barber 1's chair
+barber 1 gives customer 557 a haircut
+customer 559 arrives
+customer 559 takes a set in the waiting room
+barber 0 finishes customer 559's haircut
+customer 559 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 559
+customer 559 leaves satisfied
+barber 0 calls customer 559
+customer 559 sits in barber 0's chair
+barber 0 gives customer 559 a haircut
+customer 560 arrives
+customer 560 takes a set in the waiting room
+customer 561 arrives
+customer 561 leaves without getting haircut
+barber 1 finishes customer 557's haircut
+customer 557 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 557
+customer 557 leaves satisfied
+barber 1 calls customer 561
+customer 561 sits in barber 1's chair
+barber 1 gives customer 561 a haircut
+customer 562 arrives
+customer 562 takes a set in the waiting room
+barber 0 finishes customer 562's haircut
+customer 562 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 562
+customer 562 leaves satisfied
+barber 0 calls customer 562
+customer 562 sits in barber 0's chair
+barber 0 gives customer 562 a haircut
+customer 563 arrives
+customer 563 takes a set in the waiting room
+customer 564 arrives
+customer 564 leaves without getting haircut
+barber 1 finishes customer 564's haircut
+customer 564 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 564
+customer 564 leaves satisfied
+barber 1 calls customer 564
+customer 564 sits in barber 1's chair
+barber 1 gives customer 564 a haircut
+customer 565 arrives
+customer 565 takes a set in the waiting room
+barber 0 finishes customer 564's haircut
+customer 564 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 564
+customer 564 leaves satisfied
+barber 0 calls customer 564
+customer 564 sits in barber 0's chair
+barber 0 gives customer 564 a haircut
+customer 566 arrives
+customer 566 takes a set in the waiting room
+customer 567 arrives
+customer 567 leaves without getting haircut
+customer 568 arrives
+customer 568 leaves without getting haircut
+barber 1 finishes customer 564's haircut
+customer 564 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 564
+customer 564 leaves satisfied
+barber 1 calls customer 564
+customer 564 sits in barber 1's chair
+barber 1 gives customer 564 a haircut
+customer 569 arrives
+customer 569 takes a set in the waiting room
+barber 0 finishes customer 564's haircut
+customer 564 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 564
+customer 564 leaves satisfied
+barber 0 calls customer 569
+customer 569 sits in barber 0's chair
+barber 0 gives customer 569 a haircut
+customer 570 arrives
+customer 570 takes a set in the waiting room
+customer 571 arrives
+customer 571 leaves without getting haircut
+barber 1 finishes customer 570's haircut
+customer 570 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 570
+customer 570 leaves satisfied
+barber 1 calls customer 566
+customer 566 sits in barber 1's chair
+barber 1 gives customer 566 a haircut
+customer 572 arrives
+customer 572 takes a set in the waiting room
+barber 0 finishes customer 571's haircut
+customer 571 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 571
+customer 571 leaves satisfied
+barber 0 calls customer 571
+customer 571 sits in barber 0's chair
+barber 0 gives customer 571 a haircut
+customer 573 arrives
+customer 573 takes a set in the waiting room
+customer 574 arrives
+customer 574 leaves without getting haircut
+barber 1 finishes customer 572's haircut
+customer 572 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 572
+customer 572 leaves satisfied
+barber 1 calls customer 570
+customer 570 sits in barber 1's chair
+barber 1 gives customer 570 a haircut
+customer 575 arrives
+customer 575 takes a set in the waiting room
+customer 576 arrives
+customer 576 leaves without getting haircut
+barber 0 finishes customer 574's haircut
+customer 574 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 574
+customer 574 leaves satisfied
+barber 0 calls customer 575
+customer 575 sits in barber 0's chair
+barber 0 gives customer 575 a haircut
+barber 1 finishes customer 576's haircut
+customer 576 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 576
+customer 576 leaves satisfied
+barber 1 calls customer 574
+customer 574 sits in barber 1's chair
+barber 1 gives customer 574 a haircut
+customer 577 arrives
+customer 577 takes a set in the waiting room
+customer 578 arrives
+customer 578 takes a set in the waiting room
+barber 0 finishes customer 575's haircut
+customer 575 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 575
+customer 575 leaves satisfied
+barber 0 calls customer 575
+customer 575 sits in barber 0's chair
+barber 0 gives customer 575 a haircut
+customer 579 arrives
+customer 579 takes a set in the waiting room
+barber 1 finishes customer 574's haircut
+customer 574 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 574
+customer 574 leaves satisfied
+barber 1 calls customer 579
+customer 579 sits in barber 1's chair
+barber 1 gives customer 579 a haircut
+customer 580 arrives
+customer 580 takes a set in the waiting room
+customer 581 arrives
+customer 581 leaves without getting haircut
+barber 1 finishes customer 579's haircut
+customer 579 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 579
+customer 579 leaves satisfied
+barber 1 calls customer 579
+customer 579 sits in barber 1's chair
+barber 1 gives customer 579 a haircut
+barber 0 finishes customer 575's haircut
+customer 575 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 575
+customer 575 leaves satisfied
+customer 582 arrives
+customer 582 takes a set in the waiting room
+barber 0 calls customer 579
+customer 579 sits in barber 0's chair
+barber 0 gives customer 579 a haircut
+customer 583 arrives
+customer 583 takes a set in the waiting room
+customer 584 arrives
+customer 584 leaves without getting haircut
+barber 1 finishes customer 584's haircut
+customer 584 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 584
+customer 584 leaves satisfied
+barber 1 calls customer 582
+customer 582 sits in barber 1's chair
+barber 1 gives customer 582 a haircut
+customer 585 arrives
+customer 585 takes a set in the waiting room
+barber 0 finishes customer 584's haircut
+customer 584 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 584
+customer 584 leaves satisfied
+barber 0 calls customer 585
+customer 585 sits in barber 0's chair
+barber 0 gives customer 585 a haircut
+customer 586 arrives
+customer 586 takes a set in the waiting room
+customer 587 arrives
+customer 587 leaves without getting haircut
+barber 1 finishes customer 586's haircut
+customer 586 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 586
+customer 586 leaves satisfied
+barber 1 calls customer 587
+customer 587 sits in barber 1's chair
+barber 1 gives customer 587 a haircut
+barber 0 finishes customer 586's haircut
+customer 586 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 586
+customer 586 leaves satisfied
+barber 0 calls customer 586
+customer 586 sits in barber 0's chair
+barber 0 gives customer 586 a haircut
+customer 588 arrives
+customer 588 takes a set in the waiting room
+customer 589 arrives
+customer 589 takes a set in the waiting room
+barber 1 finishes customer 588's haircut
+customer 588 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 588
+customer 588 leaves satisfied
+barber 1 calls customer 586
+customer 586 sits in barber 1's chair
+barber 1 gives customer 586 a haircut
+barber 0 finishes customer 586's haircut
+customer 586 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 586
+customer 586 leaves satisfied
+barber 0 calls customer 588
+customer 588 sits in barber 0's chair
+barber 0 gives customer 588 a haircut
+customer 590 arrives
+customer 590 takes a set in the waiting room
+customer 591 arrives
+customer 591 takes a set in the waiting room
+customer 592 arrives
+customer 592 leaves without getting haircut
+barber 0 finishes customer 592's haircut
+customer 592 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 592
+customer 592 leaves satisfied
+barber 0 calls customer 589
+customer 589 sits in barber 0's chair
+barber 0 gives customer 589 a haircut
+customer 593 arrives
+customer 593 takes a set in the waiting room
+barber 1 finishes customer 593's haircut
+customer 593 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 593
+customer 593 leaves satisfied
+barber 1 calls customer 593
+customer 593 sits in barber 1's chair
+barber 1 gives customer 593 a haircut
+customer 594 arrives
+customer 594 takes a set in the waiting room
+customer 595 arrives
+customer 595 leaves without getting haircut
+barber 0 finishes customer 589's haircut
+customer 589 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 589
+customer 589 leaves satisfied
+barber 0 calls customer 594
+customer 594 sits in barber 0's chair
+barber 0 gives customer 594 a haircut
+customer 596 arrives
+customer 596 takes a set in the waiting room
+barber 1 finishes customer 594's haircut
+customer 594 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 594
+customer 594 leaves satisfied
+barber 1 calls customer 594
+customer 594 sits in barber 1's chair
+barber 1 gives customer 594 a haircut
+customer 597 arrives
+customer 597 takes a set in the waiting room
+customer 598 arrives
+customer 598 leaves without getting haircut
+customer 599 arrives
+customer 599 leaves without getting haircut
+barber 0 finishes customer 594's haircut
+customer 594 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 594
+customer 594 leaves satisfied
+barber 0 calls customer 594
+customer 594 sits in barber 0's chair
+barber 0 gives customer 594 a haircut
+barber 1 finishes customer 594's haircut
+customer 594 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 594
+customer 594 leaves satisfied
+barber 1 calls customer 596
+customer 596 sits in barber 1's chair
+barber 1 gives customer 596 a haircut
+customer 600 arrives
+customer 600 takes a set in the waiting room
+customer 601 arrives
+customer 601 takes a set in the waiting room
+customer 602 arrives
+customer 602 leaves without getting haircut
+barber 1 finishes customer 596's haircut
+customer 596 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 596
+customer 596 leaves satisfied
+barber 1 calls customer 602
+customer 602 sits in barber 1's chair
+barber 1 gives customer 602 a haircut
+barber 0 finishes customer 594's haircut
+customer 594 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 594
+customer 594 leaves satisfied
+barber 0 calls customer 602
+customer 602 sits in barber 0's chair
+barber 0 gives customer 602 a haircut
+customer 603 arrives
+customer 603 takes a set in the waiting room
+customer 604 arrives
+customer 604 takes a set in the waiting room
+customer 605 arrives
+customer 605 leaves without getting haircut
+barber 1 finishes customer 605's haircut
+customer 605 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 605
+customer 605 leaves satisfied
+barber 1 calls customer 605
+customer 605 sits in barber 1's chair
+barber 1 gives customer 605 a haircut
+barber 0 finishes customer 605's haircut
+customer 605 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 605
+customer 605 leaves satisfied
+barber 0 calls customer 605
+customer 605 sits in barber 0's chair
+barber 0 gives customer 605 a haircut
+customer 606 arrives
+customer 606 takes a set in the waiting room
+customer 607 arrives
+customer 607 takes a set in the waiting room
+barber 1 finishes customer 606's haircut
+customer 606 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 606
+customer 606 leaves satisfied
+barber 1 calls customer 606
+customer 606 sits in barber 1's chair
+barber 1 gives customer 606 a haircut
+customer 608 arrives
+customer 608 takes a set in the waiting room
+customer 609 arrives
+customer 609 leaves without getting haircut
+barber 0 finishes customer 606's haircut
+customer 606 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 606
+customer 606 leaves satisfied
+barber 0 calls customer 606
+customer 606 sits in barber 0's chair
+barber 0 gives customer 606 a haircut
+customer 610 arrives
+customer 610 takes a set in the waiting room
+customer 611 arrives
+customer 611 leaves without getting haircut
+barber 0 finishes customer 611's haircut
+customer 611 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 611
+customer 611 leaves satisfied
+barber 0 calls customer 607
+customer 607 sits in barber 0's chair
+barber 0 gives customer 607 a haircut
+barber 1 finishes customer 611's haircut
+customer 611 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 611
+customer 611 leaves satisfied
+barber 1 calls customer 610
+customer 610 sits in barber 1's chair
+barber 1 gives customer 610 a haircut
+customer 612 arrives
+customer 612 takes a set in the waiting room
+customer 613 arrives
+customer 613 takes a set in the waiting room
+customer 614 arrives
+customer 614 leaves without getting haircut
+barber 0 finishes customer 607's haircut
+customer 607 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 607
+customer 607 leaves satisfied
+barber 0 calls customer 610
+customer 610 sits in barber 0's chair
+barber 0 gives customer 610 a haircut
+customer 615 arrives
+customer 615 takes a set in the waiting room
+barber 1 finishes customer 615's haircut
+customer 615 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 615
+customer 615 leaves satisfied
+barber 1 calls customer 614
+customer 614 sits in barber 1's chair
+barber 1 gives customer 614 a haircut
+customer 616 arrives
+customer 616 takes a set in the waiting room
+customer 617 arrives
+customer 617 leaves without getting haircut
+barber 1 finishes customer 614's haircut
+customer 614 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 614
+customer 614 leaves satisfied
+barber 1 calls customer 613
+customer 613 sits in barber 1's chair
+barber 1 gives customer 613 a haircut
+barber 0 finishes customer 617's haircut
+customer 617 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 617
+customer 617 leaves satisfied
+barber 0 calls customer 617
+customer 617 sits in barber 0's chair
+barber 0 gives customer 617 a haircut
+customer 618 arrives
+customer 618 takes a set in the waiting room
+customer 619 arrives
+customer 619 takes a set in the waiting room
+customer 620 arrives
+customer 620 leaves without getting haircut
+barber 1 finishes customer 613's haircut
+customer 613 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 613
+customer 613 leaves satisfied
+barber 1 calls customer 617
+customer 617 sits in barber 1's chair
+barber 1 gives customer 617 a haircut
+barber 0 finishes customer 617's haircut
+customer 617 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 617
+customer 617 leaves satisfied
+barber 0 calls customer 620
+customer 620 sits in barber 0's chair
+barber 0 gives customer 620 a haircut
+customer 621 arrives
+customer 621 takes a set in the waiting room
+customer 622 arrives
+customer 622 takes a set in the waiting room
+customer 623 arrives
+customer 623 leaves without getting haircut
+barber 1 finishes customer 623's haircut
+customer 623 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 623
+customer 623 leaves satisfied
+barber 1 calls customer 620
+customer 620 sits in barber 1's chair
+barber 1 gives customer 620 a haircut
+customer 624 arrives
+customer 624 takes a set in the waiting room
+barber 0 finishes customer 620's haircut
+customer 620 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 620
+customer 620 leaves satisfied
+barber 0 calls customer 624
+customer 624 sits in barber 0's chair
+barber 0 gives customer 624 a haircut
+customer 625 arrives
+customer 625 takes a set in the waiting room
+customer 626 arrives
+customer 626 leaves without getting haircut
+barber 1 finishes customer 620's haircut
+customer 620 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 620
+customer 620 leaves satisfied
+barber 1 calls customer 626
+customer 626 sits in barber 1's chair
+barber 1 gives customer 626 a haircut
+barber 0 finishes customer 626's haircut
+customer 626 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 626
+customer 626 leaves satisfied
+barber 0 calls customer 626
+customer 626 sits in barber 0's chair
+barber 0 gives customer 626 a haircut
+customer 627 arrives
+customer 627 takes a set in the waiting room
+customer 628 arrives
+customer 628 takes a set in the waiting room
+customer 629 arrives
+customer 629 leaves without getting haircut
+barber 1 finishes customer 626's haircut
+customer 626 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 626
+customer 626 leaves satisfied
+barber 1 calls customer 626
+customer 626 sits in barber 1's chair
+barber 1 gives customer 626 a haircut
+barber 0 finishes customer 626's haircut
+customer 626 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 626
+customer 626 leaves satisfied
+barber 0 calls customer 629
+customer 629 sits in barber 0's chair
+barber 0 gives customer 629 a haircut
+customer 630 arrives
+customer 630 takes a set in the waiting room
+customer 631 arrives
+customer 631 takes a set in the waiting room
+customer 632 arrives
+customer 632 leaves without getting haircut
+barber 0 finishes customer 631's haircut
+customer 631 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 631
+customer 631 leaves satisfied
+barber 0 calls customer 628
+customer 628 sits in barber 0's chair
+barber 0 gives customer 628 a haircut
+barber 1 finishes customer 632's haircut
+customer 632 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 632
+customer 632 leaves satisfied
+barber 1 calls customer 631
+customer 631 sits in barber 1's chair
+barber 1 gives customer 631 a haircut
+customer 633 arrives
+customer 633 takes a set in the waiting room
+customer 634 arrives
+customer 634 takes a set in the waiting room
+customer 635 arrives
+customer 635 leaves without getting haircut
+barber 1 finishes customer 635's haircut
+customer 635 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 635
+customer 635 leaves satisfied
+barber 1 calls customer 635
+customer 635 sits in barber 1's chair
+barber 1 gives customer 635 a haircut
+barber 0 finishes customer 628's haircut
+customer 628 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 628
+customer 628 leaves satisfied
+barber 0 calls customer 635
+customer 635 sits in barber 0's chair
+barber 0 gives customer 635 a haircut
+customer 636 arrives
+customer 636 takes a set in the waiting room
+customer 637 arrives
+customer 637 takes a set in the waiting room
+customer 638 arrives
+customer 638 leaves without getting haircut
+barber 1 finishes customer 638's haircut
+customer 638 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 638
+customer 638 leaves satisfied
+barber 1 calls customer 638
+customer 638 sits in barber 1's chair
+barber 1 gives customer 638 a haircut
+barber 0 finishes customer 638's haircut
+customer 638 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 638
+customer 638 leaves satisfied
+barber 0 calls customer 638
+customer 638 sits in barber 0's chair
+barber 0 gives customer 638 a haircut
+customer 639 arrives
+customer 639 takes a set in the waiting room
+customer 640 arrives
+customer 640 takes a set in the waiting room
+barber 1 finishes customer 640's haircut
+customer 640 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 640
+customer 640 leaves satisfied
+barber 1 calls customer 640
+customer 640 sits in barber 1's chair
+barber 1 gives customer 640 a haircut
+barber 0 finishes customer 640's haircut
+customer 640 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 640
+customer 640 leaves satisfied
+barber 0 calls customer 639
+customer 639 sits in barber 0's chair
+barber 0 gives customer 639 a haircut
+customer 641 arrives
+customer 641 takes a set in the waiting room
+customer 642 arrives
+customer 642 takes a set in the waiting room
+customer 643 arrives
+customer 643 leaves without getting haircut
+barber 1 finishes customer 642's haircut
+customer 642 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 642
+customer 642 leaves satisfied
+barber 1 calls customer 642
+customer 642 sits in barber 1's chair
+barber 1 gives customer 642 a haircut
+barber 0 finishes customer 639's haircut
+customer 639 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 639
+customer 639 leaves satisfied
+barber 0 calls customer 643
+customer 643 sits in barber 0's chair
+barber 0 gives customer 643 a haircut
+customer 644 arrives
+customer 644 takes a set in the waiting room
+customer 645 arrives
+customer 645 takes a set in the waiting room
+customer 646 arrives
+customer 646 leaves without getting haircut
+barber 0 finishes customer 645's haircut
+customer 645 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 645
+customer 645 leaves satisfied
+barber 0 calls customer 646
+customer 646 sits in barber 0's chair
+barber 0 gives customer 646 a haircut
+barber 1 finishes customer 646's haircut
+customer 646 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 646
+customer 646 leaves satisfied
+barber 1 calls customer 645
+customer 645 sits in barber 1's chair
+barber 1 gives customer 645 a haircut
+customer 647 arrives
+customer 647 takes a set in the waiting room
+customer 648 arrives
+customer 648 takes a set in the waiting room
+barber 1 finishes customer 648's haircut
+customer 648 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 648
+customer 648 leaves satisfied
+barber 1 calls customer 648
+customer 648 sits in barber 1's chair
+barber 1 gives customer 648 a haircut
+customer 649 arrives
+customer 649 takes a set in the waiting room
+barber 0 finishes customer 649's haircut
+customer 649 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 649
+customer 649 leaves satisfied
+barber 0 calls customer 649
+customer 649 sits in barber 0's chair
+barber 0 gives customer 649 a haircut
+customer 650 arrives
+customer 650 takes a set in the waiting room
+customer 651 arrives
+customer 651 leaves without getting haircut
+barber 1 finishes customer 651's haircut
+customer 651 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 651
+customer 651 leaves satisfied
+barber 1 calls customer 651
+customer 651 sits in barber 1's chair
+barber 1 gives customer 651 a haircut
+barber 0 finishes customer 649's haircut
+customer 649 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 649
+customer 649 leaves satisfied
+barber 0 calls customer 649
+customer 649 sits in barber 0's chair
+barber 0 gives customer 649 a haircut
+customer 652 arrives
+customer 652 takes a set in the waiting room
+customer 653 arrives
+customer 653 takes a set in the waiting room
+customer 654 arrives
+customer 654 leaves without getting haircut
+barber 1 finishes customer 654's haircut
+customer 654 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 654
+customer 654 leaves satisfied
+barber 1 calls customer 654
+customer 654 sits in barber 1's chair
+barber 1 gives customer 654 a haircut
+barber 0 finishes customer 649's haircut
+customer 649 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 649
+customer 649 leaves satisfied
+barber 0 calls customer 654
+customer 654 sits in barber 0's chair
+barber 0 gives customer 654 a haircut
+customer 655 arrives
+customer 655 takes a set in the waiting room
+customer 656 arrives
+customer 656 takes a set in the waiting room
+customer 657 arrives
+customer 657 leaves without getting haircut
+barber 0 finishes customer 657's haircut
+customer 657 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 657
+customer 657 leaves satisfied
+barber 0 calls customer 657
+customer 657 sits in barber 0's chair
+barber 0 gives customer 657 a haircut
+barber 1 finishes customer 657's haircut
+customer 657 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 657
+customer 657 leaves satisfied
+barber 1 calls customer 656
+customer 656 sits in barber 1's chair
+barber 1 gives customer 656 a haircut
+customer 658 arrives
+customer 658 takes a set in the waiting room
+customer 659 arrives
+customer 659 takes a set in the waiting room
+barber 0 finishes customer 659's haircut
+customer 659 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 659
+customer 659 leaves satisfied
+barber 0 calls customer 656
+customer 656 sits in barber 0's chair
+barber 0 gives customer 656 a haircut
+customer 660 arrives
+customer 660 takes a set in the waiting room
+barber 1 finishes customer 660's haircut
+customer 660 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 660
+customer 660 leaves satisfied
+barber 1 calls customer 659
+customer 659 sits in barber 1's chair
+barber 1 gives customer 659 a haircut
+customer 661 arrives
+customer 661 takes a set in the waiting room
+customer 662 arrives
+customer 662 leaves without getting haircut
+barber 1 finishes customer 662's haircut
+customer 662 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 662
+customer 662 leaves satisfied
+barber 1 calls customer 662
+customer 662 sits in barber 1's chair
+barber 1 gives customer 662 a haircut
+customer 663 arrives
+customer 663 takes a set in the waiting room
+barber 0 finishes customer 660's haircut
+customer 660 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 660
+customer 660 leaves satisfied
+barber 0 calls customer 660
+customer 660 sits in barber 0's chair
+barber 0 gives customer 660 a haircut
+customer 664 arrives
+customer 664 takes a set in the waiting room
+customer 665 arrives
+customer 665 leaves without getting haircut
+barber 1 finishes customer 663's haircut
+customer 663 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 663
+customer 663 leaves satisfied
+barber 1 calls customer 663
+customer 663 sits in barber 1's chair
+barber 1 gives customer 663 a haircut
+customer 666 arrives
+customer 666 takes a set in the waiting room
+barber 0 finishes customer 666's haircut
+customer 666 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 666
+customer 666 leaves satisfied
+barber 0 calls customer 663
+customer 663 sits in barber 0's chair
+barber 0 gives customer 663 a haircut
+customer 667 arrives
+customer 667 takes a set in the waiting room
+barber 1 finishes customer 667's haircut
+customer 667 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 667
+customer 667 leaves satisfied
+barber 1 calls customer 666
+customer 666 sits in barber 1's chair
+barber 1 gives customer 666 a haircut
+customer 668 arrives
+customer 668 takes a set in the waiting room
+barber 0 finishes customer 668's haircut
+customer 668 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 668
+customer 668 leaves satisfied
+barber 0 calls customer 666
+customer 666 sits in barber 0's chair
+barber 0 gives customer 666 a haircut
+customer 669 arrives
+customer 669 takes a set in the waiting room
+customer 670 arrives
+customer 670 leaves without getting haircut
+customer 671 arrivesbarber 
+0 finishes customer 666's haircut
+customer customer 671 leaves without getting haircut
+666 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 666
+customer 666 leaves satisfied
+barber 0 calls customer 670
+customer 670 sits in barber 0's chair
+barber 0 gives customer 670 a haircut
+barber 1 finishes customer 666's haircut
+customer 666 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 666
+customer 666 leaves satisfied
+barber 1 calls customer 670
+customer 670 sits in barber 1's chair
+barber 1 gives customer 670 a haircut
+customer 672 arrives
+customer 672 takes a set in the waiting room
+customer 673 arrives
+customer 673 takes a set in the waiting room
+customer 674 arrives
+customer 674 leaves without getting haircut
+barber 0 finishes customer 670's haircut
+customer 670 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 670
+customer 670 leaves satisfied
+barber 0 calls customer 670
+customer 670 sits in barber 0's chair
+barber 0 gives customer 670 a haircut
+barber 1 finishes customer 670's haircut
+customer 670 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 670
+customer 670 leaves satisfied
+barber 1 calls customer 674
+customer 674 sits in barber 1's chair
+barber 1 gives customer 674 a haircut
+customer 675 arrives
+customer 675 takes a set in the waiting room
+customer 676 arrives
+customer 676 takes a set in the waiting room
+customer 677 arrives
+customer 677 leaves without getting haircut
+barber 0 finishes customer 677's haircut
+customer 677 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 677
+customer 677 leaves satisfied
+barber 0 calls customer 674
+customer 674 sits in barber 0's chair
+barber 0 gives customer 674 a haircut
+barber 1 finishes customer 674's haircut
+customer 674 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 674
+customer 674 leaves satisfied
+barber 1 calls customer 677
+customer 677 sits in barber 1's chair
+barber 1 gives customer 677 a haircut
+customer 678 arrives
+customer 678 takes a set in the waiting room
+customer 679 arrives
+customer 679 takes a set in the waiting room
+barber 0 finishes customer 679's haircut
+customer 679 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 679
+customer 679 leaves satisfied
+barber 0 calls customer 677
+customer 677 sits in barber 0's chair
+barber 0 gives customer 677 a haircut
+customer 680 arrives
+customer 680 takes a set in the waiting room
+customer 681 arrives
+customer 681 leaves without getting haircut
+barber 1 finishes customer 677's haircut
+customer 677 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 677
+customer 677 leaves satisfied
+barber 1 calls customer 681
+customer 681 sits in barber 1's chair
+barber 1 gives customer 681 a haircut
+customer 682 arrives
+customer 682 takes a set in the waiting room
+barber 0 finishes customer 677's haircut
+customer 677 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 677
+customer 677 leaves satisfied
+barber 0 calls customer 681
+customer 681 sits in barber 0's chair
+barber 0 gives customer 681 a haircut
+customer 683 arrives
+customer 683 takes a set in the waiting room
+barber 1 finishes customer 683's haircut
+customer 683 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 683
+customer 683 leaves satisfied
+barber 1 calls customer 683
+customer 683 sits in barber 1's chair
+barber 1 gives customer 683 a haircut
+customer 684 arrives
+customer 684 takes a set in the waiting room
+customer 685 arrives
+customer 685 leaves without getting haircut
+barber 0 finishes customer 685's haircut
+customer 685 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 685
+customer 685 leaves satisfied
+barber 0 calls customer 682
+customer 682 sits in barber 0's chair
+barber 0 gives customer 682 a haircut
+customer 686 arrives
+customer 686 takes a set in the waiting room
+barber 1 finishes customer 686's haircut
+customer 686 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 686
+customer 686 leaves satisfied
+barber 1 calls customer 686
+customer 686 sits in barber 1's chair
+barber 1 gives customer 686 a haircut
+customer 687 arrives
+customer 687 takes a set in the waiting room
+customer 688 arrives
+customer 688 leaves without getting haircut
+barber 0 finishes customer 682's haircut
+customer 682 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 682
+customer 682 leaves satisfied
+barber 0 calls customer 688
+customer 688 sits in barber 0's chair
+barber 0 gives customer 688 a haircut
+barber 1 finishes customer 688's haircut
+customer 688 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 688
+customer 688 leaves satisfied
+barber 1 calls customer 688
+customer 688 sits in barber 1's chair
+barber 1 gives customer 688 a haircut
+customer 689 arrives
+customer 689 takes a set in the waiting room
+customer 690 arrives
+customer 690 takes a set in the waiting room
+customer 691 arrives
+customer 691 leaves without getting haircut
+barber 0 finishes customer 691's haircut
+customer 691 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 691
+customer 691 leaves satisfied
+barber 0 calls customer 687
+customer 687 sits in barber 0's chair
+barber 0 gives customer 687 a haircut
+barber 1 finishes customer 691's haircut
+customer 691 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 691
+customer 691 leaves satisfied
+barber 1 calls customer 691
+customer 691 sits in barber 1's chair
+barber 1 gives customer 691 a haircut
+customer 692 arrives
+customer 692 takes a set in the waiting room
+customer 693 arrives
+customer 693 takes a set in the waiting room
+customer 694 arrives
+customer 694 leaves without getting haircut
+barber 0 finishes customer 687's haircut
+customer 687 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 687
+customer 687 leaves satisfied
+barber 0 calls customer 694
+customer 694 sits in barber 0's chair
+barber 0 gives customer 694 a haircut
+customer 695 arrives
+customer 695 takes a set in the waiting room
+barber 1 finishes customer 694's haircut
+customer 694 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 694
+customer 694 leaves satisfied
+barber 1 calls customer 694
+customer 694 sits in barber 1's chair
+barber 1 gives customer 694 a haircut
+customer 696 arrives
+customer 696 takes a set in the waiting room
+customer 697 arrives
+customer 697 leaves without getting haircut
+barber 0 finishes customer 697's haircut
+customer 697 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 697
+customer 697 leaves satisfied
+barber 0 calls customer 697
+customer 697 sits in barber 0's chair
+barber 0 gives customer 697 a haircut
+customer 698 arrives
+customer 698 takes a set in the waiting room
+barber 1 finishes customer 698's haircut
+customer 698 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 698
+customer 698 leaves satisfied
+barber 1 calls customer 696
+customer 696 sits in barber 1's chair
+barber 1 gives customer 696 a haircut
+customer 699 arrives
+customer 699 takes a set in the waiting room
+customer 700 arrives
+barber 0 finishes customer 698's haircut
+customer 698 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 698
+customer 698 leaves satisfied
+barber 0 calls customer 699
+customer 699 sits in barber 0's chair
+barber 0 gives customer 699 a haircut
+customer 700 leaves without getting haircut
+customer 701 arrives
+customer 701 takes a set in the waiting room
+barber 1 finishes customer 699's haircut
+customer 699 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 699
+customer 699 leaves satisfied
+barber 1 calls customer 701
+customer 701 sits in barber 1's chair
+barber 1 gives customer 701 a haircut
+customer 702 arrives
+customer 702 takes a set in the waiting room
+barber 0 finishes customer 699's haircut
+customer 699 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 699
+customer 699 leaves satisfied
+barber 0 calls customer 699
+customer 699 sits in barber 0's chair
+barber 0 gives customer 699 a haircut
+customer 703 arrives
+customer 703 takes a set in the waiting room
+customer 704 arrives
+customer 704 leaves without getting haircut
+customer 705 arrives
+customer 705 leaves without getting haircut
+barber 0 finishes customer 705's haircut
+customer 705 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 705
+customer 705 leaves satisfied
+barber 0 calls customer 703
+customer 703 sits in barber 0's chair
+barber 0 gives customer 703 a haircut
+customer 706 arrives
+customer 706 takes a set in the waiting room
+barber 1 finishes customer 703's haircut
+customer 703 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 703
+customer 703 leaves satisfied
+barber 1 calls customer 703
+customer 703 sits in barber 1's chair
+barber 1 gives customer 703 a haircut
+customer 707 arrives
+customer 707 takes a set in the waiting room
+customer 708 arrives
+customer 708 leaves without getting haircut
+barber 0 finishes customer 708's haircut
+customer 708 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 708
+customer 708 leaves satisfied
+barber 0 calls customer 708
+customer 708 sits in barber 0's chair
+barber 0 gives customer 708 a haircut
+customer 709 arrives
+customer 709 takes a set in the waiting room
+barber 1 finishes customer 708's haircut
+customer 708 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 708
+customer 708 leaves satisfied
+barber 1 calls customer 706
+customer 706 sits in barber 1's chair
+barber 1 gives customer 706 a haircut
+customer 710 arrives
+customer 710 takes a set in the waiting room
+customer 711 arrives
+customer 711 leaves without getting haircut
+barber 0 finishes customer 710's haircut
+customer 710 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 710
+customer 710 leaves satisfied
+barber 0 calls customer 710
+customer 710 sits in barber 0's chair
+barber 0 gives customer 710 a haircut
+customer 712 arrives
+customer 712 takes a set in the waiting room
+barber 1 finishes customer 706's haircut
+customer 706 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 706
+customer 706 leaves satisfied
+barber 1 calls customer 712
+customer 712 sits in barber 1's chair
+barber 1 gives customer 712 a haircut
+customer 713 arrives
+customer 713 takes a set in the waiting room
+customer 714 arrives
+customer 714 leaves without getting haircut
+customer 715 arrives
+customer 715 leaves without getting haircut
+barber 1 finishes customer 714's haircut
+customer 714 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 714
+customer 714 leaves satisfied
+barber 1 calls customer 715
+customer 715 sits in barber 1's chair
+barber 1 gives customer 715 a haircut
+barber 0 finishes customer 715's haircut
+customer 715 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 715
+customer 715 leaves satisfied
+barber 0 calls customer 714
+customer 714 sits in barber 0's chair
+barber 0 gives customer 714 a haircut
+customer 716 arrives
+customer 716 takes a set in the waiting room
+customer 717 arrives
+customer 717 takes a set in the waiting room
+barber 1 finishes customer 716's haircut
+customer 716 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 716
+customer 716 leaves satisfied
+barber 1 calls customer 717
+customer 717 sits in barber 1's chair
+barber 1 gives customer 717 a haircut
+customer 718 arrives
+customer 718 takes a set in the waiting room
+barber 0 finishes customer 718's haircut
+customer 718 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 718
+customer 718 leaves satisfied
+barber 0 calls customer 716
+customer 716 sits in barber 0's chair
+barber 0 gives customer 716 a haircut
+customer 719 arrives
+customer 719 takes a set in the waiting room
+customer 720 arrives
+customer 720 leaves without getting haircut
+customer 721 arrives
+customer 721 leaves without getting haircut
+barber 1 finishes customer 718's haircut
+customer 718 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 718
+customer 718 leaves satisfied
+barber 1 calls customer 718
+customer 718 sits in barber 1's chair
+barber 1 gives customer 718 a haircut
+customer 722 arrives
+customer 722 takes a set in the waiting room
+barber 0 finishes customer 722's haircut
+customer 722 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 722
+customer 722 leaves satisfied
+barber 0 calls customer 718
+customer 718 sits in barber 0's chair
+barber 0 gives customer 718 a haircut
+customer 723 arrives
+customer 723 takes a set in the waiting room
+customer 724 arrives
+customer 724 leaves without getting haircut
+barber 1 finishes customer 724's haircut
+customer 724 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 724
+customer 724 leaves satisfied
+barber 1 calls customer 722
+customer 722 sits in barber 1's chair
+barber 1 gives customer 722 a haircut
+customer 725 arrives
+customer 725 takes a set in the waiting room
+barber 0 finishes customer 724's haircut
+customer 724 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 724
+customer 724 leaves satisfied
+barber 0 calls customer 725
+customer 725 sits in barber 0's chair
+barber 0 gives customer 725 a haircut
+customer 726 arrives
+customer 726 takes a set in the waiting room
+customer 727 arrives
+customer 727 leaves without getting haircut
+barber 1 finishes customer 725's haircut
+customer 725 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 725
+customer 725 leaves satisfied
+barber 1 calls customer 723
+customer 723 sits in barber 1's chair
+barber 1 gives customer 723 a haircut
+barber 0 finishes customer 725's haircut
+customer 725 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 725
+customer 725 leaves satisfied
+barber 0 calls customer 725
+customer 725 sits in barber 0's chair
+barber 0 gives customer 725 a haircut
+customer 728 arrives
+customer 728 takes a set in the waiting room
+customer 729 arrives
+customer 729 takes a set in the waiting room
+customer 730 arrives
+customer 730 leaves without getting haircut
+barber 0 finishes customer 730's haircut
+customer 730 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 730
+customer 730 leaves satisfied
+barber 0 calls customer 728
+customer 728 sits in barber 0's chair
+barber 0 gives customer 728 a haircut
+barber 1 finishes customer 723's haircut
+customer 723 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 723
+customer 723 leaves satisfied
+barber 1 calls customer 728
+customer 728 sits in barber 1's chair
+barber 1 gives customer 728 a haircut
+customer 731 arrives
+customer 731 takes a set in the waiting room
+customer 732 arrives
+customer 732 takes a set in the waiting room
+barber 0 finishes customer 728's haircut
+customer 728 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 728
+customer 728 leaves satisfied
+barber 0 calls customer 731
+customer 731 sits in barber 0's chair
+barber 0 gives customer 731 a haircut
+customer 733 arrives
+customer 733 takes a set in the waiting room
+customer 734 arrives
+customer 734 leaves without getting haircut
+barber 1 finishes customer 734's haircut
+customer 734 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 734
+customer 734 leaves satisfied
+barber 1 calls customer 731
+customer 731 sits in barber 1's chair
+barber 1 gives customer 731 a haircut
+customer 735 arrives
+customer 735 takes a set in the waiting room
+barber 0 finishes customer 735's haircut
+customer 735 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 735
+customer 735 leaves satisfied
+barber 0 calls customer 732
+customer 732 sits in barber 0's chair
+barber 0 gives customer 732 a haircut
+customer 736 arrives
+customer 736 takes a set in the waiting room
+customer 737 arrives
+customer 737 leaves without getting haircut
+barber 1 finishes customer 736's haircut
+customer 736 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 736
+customer 736 leaves satisfied
+barber 1 calls customer 737
+customer 737 sits in barber 1's chair
+barber 1 gives customer 737 a haircut
+customer 738 arrives
+customer 738 takes a set in the waiting room
+barber 0 finishes customer 738's haircut
+customer 738 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 738
+customer 738 leaves satisfied
+barber 0 calls customer 736
+customer 736 sits in barber 0's chair
+barber 0 gives customer 736 a haircut
+customer 739 arrives
+customer 739 takes a set in the waiting room
+customer 740 arrives
+customer 740 leaves without getting haircut
+the shop closes
+barber 1 finishes customer 740's haircut
+customer 740 gets up and proffers payment to barber 1
+barber 1 accepts payment form customer 740
+customer 740 leaves satisfied
+barber 1 leaves for home
+barber 0 finishes customer 739's haircut
+customer 739 gets up and proffers payment to barber 0
+barber 0 accepts payment form customer 739
+customer 739 leaves satisfied
+barber 0 leaves for home
+customers served immediately: 2
+customers waited 494
+total customers served 496
+customers turned away: 245
+total customers: 741
