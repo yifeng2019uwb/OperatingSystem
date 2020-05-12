@@ -1,0 +1,4 @@
+#! /bin/bash
+
+	g++ -Wall -Werror -pedantic client.cpp remotefilesystem.cpp -o client.o
+

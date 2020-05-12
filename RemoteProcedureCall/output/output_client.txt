@@ -1,0 +1,111 @@
+ ------- rpc constructor ---------- 
+start rpc
+socket success 
+rpc construct success
+ ---------- Open file --------------
+ --------  start to open file ---------- 
+ ****** packet info ******* 
+auth_token: 1234
+ seq - num: 0
+ op : 0
+ pathname : file0.txt
+ size : 2
+ packet size:320
+ start to send 
+ send size : 320
+in send, outBytes: 320
+in Open, sent success : 320
+ start to recv 
+ in recv, inBytes = 272
+ recv bytes: 272
+ ------ msg info -----
+msg size : 272
+msg - seq : 0
+msg - result: 94862602186848
+ in open -- print this filesystem : 0x7ffe0d4b9360
+in file constructor, print this: 0x55fada0ac470
+ in file constructor , print filesystem0x7ffe0d4b9360
+in file constructor, print fd : 0
+in open - file.fd = 0x5646ebb4b060
+in open - file = 0x55fada0ac470
+
+in client class - file open : 0x55fada0ac470
+in client class - rpc : 0x7ffe0d4b9360
+in client class - file - fd 0x5646ebb4b060
+in client class - file.rpc: 0x7ffe0d4b9360
+ write to file 
+  ------- start write  -------- 
+file descriptor : 139969044785408
+  ***** packet info **** 
+ seq - num: 1
+ op : 2
+ size : 5
+ data to write : Hello
+ packet size:320
+ start to send 
+ send size : 320
+in send, outBytes: 320
+ in write, send data to server : 320
+ start to recv 
+ in recv, inBytes = 272
+ in write, recv data to server : 272
+packet seq = 1
+msg seq = 1
+in write - data return : 5
+write number : 5
+ -----------     in read ------ 
+print filesytem in this file: 0x7ffe0d4b9360
+ ***** packet info ****** 
+seq - num: 2
+op : 1
+file descriptor : 94862602186848
+size : 3
+ start to send 
+ send size : 320
+in send, outBytes: 320
+ start to recv 
+ in recv, inBytes = 272
+     packet seq = 2
+     msg seq = 2
+in read - data return : FGH??
+ read number : 3 data : FGH??
+ --- try read again ---- 
+in client class - file open : 0x55fada0ac470
+in client class - rpc : 0x7ffe0d4b9360
+in client class - file - fd 0x5646ebb4b060
+in client class - file.rpc: 0x7ffe0d4b9360
+ -----------     in read ------ 
+print filesytem in this file: 0x7ffe0d4b9360
+ ***** packet info ****** 
+seq - num: 3
+op : 1
+file descriptor : 94862602186848
+size : 5
+ start to send 
+ send size : 320
+in send, outBytes: 320
+ start to recv 
+ in recv, inBytes = 272
+     packet seq = 3
+     msg seq = 3
+in read - data return : IJKLM
+ read number : 5 data : IJKLM
+ read again after lseek 
+ -----------     in read ------ 
+print filesytem in this file: 0x7ffe0d4b9360
+ ***** packet info ****** 
+seq - num: 4
+op : 1
+file descriptor : 94862602186848
+size : 5
+ start to send 
+ send size : 320
+in send, outBytes: 320
+ start to recv 
+ in recv, inBytes = 272
+     packet seq = 4
+     msg seq = 4
+in read - data return : N
+KLM
+ read number : 2 data : N
+KLM

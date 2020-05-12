@@ -1,0 +1,4 @@
+#! /bin/bash
+
+	g++ -Wall -Werror -pedantic server.cpp -o server.o
+

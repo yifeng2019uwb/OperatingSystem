@@ -1,0 +1,2956 @@
+ABCDEFGHIJKLMNOPQ
+0
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+1
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+2
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+
+ABCDEFGHIJKLMNOPQ
+3
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+4
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+5
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+6
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+7
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+8
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+9
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+10
+
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+ABCDEFGHIJKLMNOPQ
+11
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+12
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+13
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+14
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+15
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+16
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+17
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+18
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+19
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+20
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+21
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+22
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+23
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+24
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+25
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+26
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+27
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+28
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+29
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+30
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+
+ABCDEFGHIJKLMNOPQ
+31
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+32
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+33
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+34
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+35
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+36
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+37
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+38
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+ABCDEFGHIJKLMNOPQ
+39
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+40
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+41
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+42
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+43
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+44
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+45
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+46
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+47
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+48
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+49
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+50
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+51
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+52
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+53
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+ABCDEFGHIJKLMNOPQ
+54
+
+
+Assignment 3: Standard I/O Library
+Original author: Munehiro Fukuda
+
+Revisions 2019: Morris Bernstein
+
+As we have seen in Lab 3, the operating system calls open, close, read, write, llseek, etc. provide an effective interface to the filesystem, but have significant limitations. Performance and convenience can be dramatically improved using a higher-level userland library that provides buffering and data-formatting. Furthermore, programs that use the language-defined standard library are more likely to be portable across operating systems.
+
+The standard I/O library of the C language is available to any C or C++ program that includes the stdio.h (cstdio in C++) header file. Since C predates the object-oriented paradigm, the FILE* object is passed in as the first argument to the various functions that implement file operations, but it is fundamentally an operation on an object.
+
+For this assignment, you will implement a class-based version of the C standard I/O library. The constructor will open the file, and the destructor will close the file.
+
+Since constructors and destructors don't return values, we have to alter the semantics slightly: if an error occurs, throw an exception.
+
+Implement the following methods using only the underlying system calls. See the corresponding man pages. Note that the file argument is implicit in the method call, so we must alter the function signature slightly.
+ferror
+feof
+fflush
+fputc
+fgetc
+fgets
+fputs
+fseek
+Do not use the C++ standard template library, C++ strings library, C standard I/O library or C standard strings functions. You may use malloc to allocate the buffer.
+
+Behavior should be predictable even for files opened in read/write mode. For example, if you read ABC from the file, write XYZ, and then read GHI, the file should end up containing ABCXYZGHI regardless of the buffering mode. Similarly, writing ABCDEFGHI, repositioning the file pointer to the beginning of the file ("rewinding") and writing XYZ should leave XYZDEFGHI in the file regardless of the buffering mode.
+
+Your test program should verify that writing to a read-only file is an error; reading from a write-only file is an error; and that the the code correctly handles the switch between reading and writing in read/write mode.
+
+Your implementation need not worry about thread-safety.
+
+For the purposes of the assignment you only need to implement the default FULL_BUFFER mode. setvbuf is unsupported.
+
+"a" and "a+" modes have complicated semantics and need not be implemented.
+
+You may crash the program if any unsupported feature is called. See undefined behavior.
+
+An application using your library should #include "file.h" and link with file.o (produced by compiling file.cc with the -c flag. Simulate this by putting your implementation and test program in separate directories (use the -I flag when compiling your test program).
+
+Repeat the benchmarking of Lab 3 for your implementation. This means you will be creating two separate executable programs that use your I/O library.
+
+Skeletons have been provided: file-skel.h and file-skel.cc. You may also reuse or cannibalize any of the work that you did for Lab 3.
+
+For reference, a simplified version of fprintf has been provided in the skeleton code.
+
+Don't forget the BUILD script and README files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

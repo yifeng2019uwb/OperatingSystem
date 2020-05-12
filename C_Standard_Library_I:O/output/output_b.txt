@@ -1,0 +1,117 @@
+Unix system calls, chunk size 1 elapsed time:
+	 1.455189943 seconds
+	bytes read: 4264394
+C standard library I/O fgetc elapsed time elapsed time:
+	 0.038962841 seconds
+	bytes read: 4264394
+My File I/O fgetc  elapsed time:
+	 0.093086004 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 2 elapsed time:
+	 0.731012106 seconds
+	bytes read: 4264394
+C standard library I/O, block size 2 elapsed time:
+	 0.028541088 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 2 elapsed time:
+	 0.016695023 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 4 elapsed time:
+	 0.367393017 seconds
+	bytes read: 4264394
+C standard library I/O, block size 4 elapsed time:
+	 0.014743090 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 4 elapsed time:
+	 0.013173103 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 8 elapsed time:
+	 0.182609081 seconds
+	bytes read: 4264394
+C standard library I/O, block size 8 elapsed time:
+	 0.007508039 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 8 elapsed time:
+	 0.011059999 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 16 elapsed time:
+	 0.093849897 seconds
+	bytes read: 4264394
+C standard library I/O, block size 16 elapsed time:
+	 0.004235983 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 16 elapsed time:
+	 0.010194063 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 32 elapsed time:
+	 0.047979116 seconds
+	bytes read: 4264394
+C standard library I/O, block size 32 elapsed time:
+	 0.002471924 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 32 elapsed time:
+	 0.011482000 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 64 elapsed time:
+	 0.024781942 seconds
+	bytes read: 4264394
+C standard library I/O, block size 64 elapsed time:
+	 0.002119064 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 64 elapsed time:
+	 0.011126995 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 128 elapsed time:
+	 0.012520075 seconds
+	bytes read: 4264394
+C standard library I/O, block size 128 elapsed time:
+	 0.001291990 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 128 elapsed time:
+	 0.011724949 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 256 elapsed time:
+	 0.006611109 seconds
+	bytes read: 4264394
+C standard library I/O, block size 256 elapsed time:
+	 0.001044989 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 256 elapsed time:
+	 0.010892868 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 512 elapsed time:
+	 0.003253937 seconds
+	bytes read: 4264394
+C standard library I/O, block size 512 elapsed time:
+	 0.001089096 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 512 elapsed time:
+	 0.010778189 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 1024 elapsed time:
+	 0.002002954 seconds
+	bytes read: 4264394
+C standard library I/O, block size 1024 elapsed time:
+	 0.000857115 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 1024 elapsed time:
+	 0.010717869 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 2048 elapsed time:
+	 0.001019001 seconds
+	bytes read: 4264394
+C standard library I/O, block size 2048 elapsed time:
+	 0.000650167 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 2048 elapsed time:
+	 0.010928869 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 4096 elapsed time:
+	 0.000735998 seconds
+	bytes read: 4264394
+C standard library I/O, block size 4096 elapsed time:
+	 0.000684977 seconds
+	bytes read: 4264394
+My File I/O calls, chunk size 4096 elapsed time:
+	 0.010843992 seconds
+	bytes read: 4264394

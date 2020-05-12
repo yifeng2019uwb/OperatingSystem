@@ -1,0 +1,6 @@
+
+#! /bin/bash
+
+        g++ -Wall -Werror -pedantic -std=c++11 -o3 file.cpp btest.cpp -o b.out
+
+

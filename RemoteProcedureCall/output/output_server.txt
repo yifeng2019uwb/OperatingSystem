@@ -1,0 +1,62 @@
+Server socket created 
+ Server binding created 
+ test file operations
+done recv, bytes-in: 320
+ packet info
+auth_token: 1234
+ seq - num: 0
+ op : 0
+ pathname : file0.txt
+ size : 2
+ ------------  operation is OPEN ------------- 
+open file : file0.txt
+ File open in read/write mode
+fd = 0x5646ebb4b060
+msg-result : 94862602186848
+conver back : 0x5646ebb4b060
+done sendto outBytes: 272
+done recv, bytes-in: 320
+ packet info
+auth_token: 1234
+ seq - num: 1
+ op : 2
+ pathname : ?ֻM
+ size : 5
+ --------------- operation is WRITE ---------------- 
+write char* : Hello
+data write tp file : 5 bytes
+done sendto outBytes: 272
+done recv, bytes-in: 320
+ packet info
+auth_token: 1234
+ seq - num: 2
+ op : 1
+ pathname : ?ֻM
+ size : 3
+ ------------ operation is READ ------------- 
+data read from file : FGH?FV
+done sendto outBytes: 272
+done recv, bytes-in: 320
+ packet info
+auth_token: 1234
+ seq - num: 3
+ op : 1
+ pathname : ?ֻM
+ size : 5
+ ------------ operation is READ ------------- 
+data read from file : IJKLMV
+done sendto outBytes: 272
+done recv, bytes-in: 320
+ packet info
+auth_token: 1234
+ seq - num: 4
+ op : 1
+ pathname : ?ֻM
+ size : 5
+ ------------ operation is READ ------------- 
+data read from file : N
+KLMV
+done sendto outBytes: 272
+
+
+^Z
